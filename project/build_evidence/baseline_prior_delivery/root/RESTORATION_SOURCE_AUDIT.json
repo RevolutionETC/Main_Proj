@@ -1,0 +1,178 @@
+{
+  "audit_time": "2026-10-28T10:22:57.687307+08:00",
+  "scope": "Independent source-only restoration audit; no TD job launched and no new timing/resource qualification inferred",
+  "source_root": "C:\\Users\\Xuan\\.codex\\.chatgpt-projects\\g-p-6ac6609d5fac8191bbfcec16e35eed57\\res27",
+  "qualified_baseline": "C:\\Users\\Xuan\\.codex\\.chatgpt-projects\\g-p-6ac6609d5fac8191bbfcec16e35eed57\\optimization_20261027\\delivery_qualified\\ISP_RGB_SC500_INTEGRATED",
+  "frozen_native_root": "C:\\Users\\Xuan\\.codex\\.chatgpt-projects\\g-p-6ac6609d5fac8191bbfcec16e35eed57\\p27r",
+  "status": "source_review_passed_delivery_metadata_update_required",
+  "user_source": {
+    "files": 279,
+    "changed_count": 7,
+    "changes": [
+      {
+        "path": "hdl_source/isp/display_filter.v",
+        "qualified_sha256": "b9380ab91de2489b1bf3717cd0b58be12fdfc1d881e5213981e94228970455d7",
+        "restored_sha256": "87bcee3b949bcd635ca23ce4df72af0a88fafd2bc6542f871003426c2fa439be"
+      },
+      {
+        "path": "hdl_source/isp/wb/wb_balance_96.v",
+        "qualified_sha256": "cfe32ddd028d4b06131c6de97fa05e9934cd5e7534dde80f975a916b0f5d66a2",
+        "restored_sha256": "17f1bad444d8edd5f77c5cab205ac611131ae643c3a472a0c31160317f7344ec"
+      },
+      {
+        "path": "hdl_source/ui/wb_ui_control.v",
+        "qualified_sha256": "5b89b077037ebd3976363b676ad5a47a9b3163ff489ad7084e63bda7486eeec8",
+        "restored_sha256": "7bcfae4dc5ed71c9381b7aaac9425f0eb89b2ba4f7daa29ab3f4217cda4bdc6d"
+      },
+      {
+        "path": "hdl_source/ui/wb_ui_font.hex",
+        "qualified_sha256": "695b47dca191931ded592957b9f2253be4ae3d1973a9b13f6fcbaebd3769e01d",
+        "restored_sha256": "40372e0ab8436916528e6f536d99f9e9a9ebfecf3956336fbde6cd723ff62ae5"
+      },
+      {
+        "path": "hdl_source/ui/wb_ui_font.v",
+        "qualified_sha256": "ba9d8e6f49b4323f3a5d7ad20f9807766e0d0517a200b09d1b58f8b9084fbd3d",
+        "restored_sha256": "e367d475bd2a68f6e8728259cd21ba5c08ba08316d5790a4c69529a7b97765c5"
+      },
+      {
+        "path": "hdl_source/ui/wb_ui_overlay.v",
+        "qualified_sha256": "6cfa8533ca1c1f107993385021cccbab776665894566d4c6cc51d629d6cfda0f",
+        "restored_sha256": "c85abdc1b59b057814abb55dbea4897e15c3ac33283e981864a3db1fe4308e2f"
+      },
+      {
+        "path": "hdl_source/ui/wb_ui_text.hex",
+        "qualified_sha256": "adb99906c1828c6e0a1df2c884ee58e9c74d2f51bb0029ecde78694cea7e588e",
+        "restored_sha256": "5cad99e078eea113bef3689910fc37c7d94aae1975dfc801fe2fb1df46171375"
+      }
+    ],
+    "added": [],
+    "removed": [],
+    "frozen_native_matches_source": true,
+    "native_manifest_matches_both": true,
+    "native_manifest_sha256": "783d3b14d642271c8676f18019af3bb388e02dbc6ffba93950adbc7861667e12"
+  },
+  "config": {
+    "frozen_native_all_manifest_hashes_intact": true,
+    "source_native_all_config_hashes_match": true,
+    "main_sdc_identical_to_qualified": true,
+    "all_user_source_constraints_identical_to_qualified": true
+  },
+  "preserved_contracts": {
+    "recognition_capacity": {
+      "targets": 8,
+      "runs_per_frame": 4096,
+      "labels": 128,
+      "all_target_source_files_identical_to_qualified": true,
+      "references": [
+        "hdl_source/target/red_target_video.v MAX_OBJECTS=8",
+        "hdl_source/target/color_components.v MAX_RUNS=4096, MAX_LABELS=128"
+      ]
+    },
+    "config_packet": {
+      "ui_bits": 52,
+      "wb_mode_bits": [
+        21,
+        20
+      ],
+      "reserved_bit19": 0,
+      "hide_bars_bit": 18,
+      "camera_wb_bits": 19,
+      "top_wrapper_identical_to_qualified": true,
+      "no_new_preset_port": true
+    },
+    "bars_and_info": {
+      "appearance_and_existing_info_code_preserved": true,
+      "restored_mode_captions_added": true,
+      "hide_both_bars_bit18_preserved": true,
+      "popup_over_bars_priority_preserved": true,
+      "opacity_50_percent_preserved": true,
+      "information_page": 13,
+      "information_button_main_page9_row4_preserved": true,
+      "diagnostic_backend_and_telemetry_unchanged": true
+    },
+    "gesture": {
+      "left_swipe_on_release_preserved": true,
+      "min_dx": 100,
+      "max_dy": 80,
+      "max_ms": 1000,
+      "longpress_does_not_open_menu": true,
+      "gesture_code_unchanged": true
+    },
+    "wb": {
+      "modes": [
+        0,
+        1,
+        2
+      ],
+      "presets_kelvin": [
+        3000,
+        5500,
+        6500,
+        7500
+      ],
+      "preset_indices": [
+        5,
+        30,
+        40,
+        50
+      ],
+      "manual_76_values_2500_to_10000_preserved": true,
+      "manual_K_backup_register_bits": 7,
+      "AWB_recognition_button_remains_absent": true,
+      "AB_GM_manual_mode2_only_gate_preserved": true,
+      "AWB_stats_update_mode0_only": true
+    },
+    "filters": {
+      "modes": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "frame_latched_mode_preserved": true,
+      "original_five_modes_verified_bit_exact": true,
+      "latency_HTOTAL_plus_10_unchanged": true
+    }
+  },
+  "reuse_and_resource_review": {
+    "no_added_display_window_or_sobel_instance": true,
+    "one_display_center_window_reused_by_cartoon_edge_enhancement": true,
+    "weighted_luma_shared_by_gray_and_retro": true,
+    "gray_alignment_bits": 56,
+    "cartoon_alignment_bits": 12,
+    "negative_reuses_aligned_raw_XOR": true,
+    "cartoon_edge_pipeline_shared_with_edge": true,
+    "preset_reuses_existing_kelvin_gain_lut_and_four_lane_apply_multipliers": true,
+    "no_new_DSP_arithmetic_operation_in_diff": true,
+    "no_new_video_or_target_RAM_declaration": true,
+    "ui_font_words_before": 5376,
+    "ui_font_words_after": 5824,
+    "ui_font_extra_bits": 10752,
+    "text_ROM_words_unchanged": 2048,
+    "native_actual_ERAM_LUT_DSP_and_timing_still_required": true
+  },
+  "logic_validation_evidence": [
+    "verification/RESTORE_FILTER_TEST_RESULTS.json",
+    "verification/RESTORED_UI_TEST_RESULTS.json",
+    "verification/WB_RESTORATION_TEST_RESULTS.json"
+  ],
+  "delivery_actions_required": [
+    {
+      "path": "BUILD_VARIANT.json",
+      "issue": "Copied qualified D metadata still says presets removed and only automatic/manual; version and physical_timing_qualified=true refer to the baseline, not restored candidate. Rewrite restoration identity/features and set timing qualification only after actual restored native route passes."
+    },
+    {
+      "path": "README and all copied release/test summary metadata",
+      "issue": "Do not reuse baseline release qualification as restoration qualification; regenerate final source/bit/validation manifest and update feature descriptions."
+    }
+  ],
+  "limitations": [
+    "This audit confirms source boundaries and intended hardware reuse, not actual mapped resource occupancy or place/route success.",
+    "No board hardware test was performed.",
+    "Mode3 WB remains reserved and is never emitted by valid UI."
+  ]
+}

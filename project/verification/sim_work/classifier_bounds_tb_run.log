@@ -1,0 +1,2 @@
+PASS classifier bounds: six full-height native-coordinate cases including all 614400 pixels and x1023/y599; all integer moments, covariance, determinant, area powers, shape and cycle schedule exactly match untouched 128-bit original
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\classifier_bounds_tb.sv:32: $finish called at 4566270000 (1ps)

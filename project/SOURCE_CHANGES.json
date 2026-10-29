@@ -1,0 +1,54 @@
+﻿{
+  "baseline": "20261027_ROUTED",
+  "baseline_manifest": "build_evidence/restoration_baseline/ROUTED_SOURCE_HASHES.json",
+  "baseline_manifest_sha256": "1001bc0587279cb9fb925bac453a006f712c6b415b5afd8ffc0ac9cc9a19c475",
+  "constraint_addition": {
+    "provenance": "CONSTRAINT_ADDITION_PROVENANCE.json",
+    "modified_sdc": "td_project/wb_ui_dsi.sdc",
+    "baseline_sdc_copy": "build_evidence/constraint_baseline/wb_ui_dsi.sdc",
+    "allowed_commands": [
+      "set_max_delay -from [get_regs {u_video_in/camera_sequence_gray[*]}] -to [get_regs {u_video_in/sequence_gray_sync1[*]}] -datapath_only 7.500",
+      "set_false_path -hold -from [get_regs {u_video_in/camera_sequence_gray[*]}] -to [get_regs {u_video_in/sequence_gray_sync1[*]}]"
+    ],
+    "original_sdc_sha256": "fa863545159c6c8ccfe4a808548a18e00b65a19cfd65b0f9930b010f96ce2236",
+    "added_block_sha256": "28a4a5b9dee1d44209b738a8149cfa7fa4e94133df9634d68d5521cff2d59499",
+    "unchanged_constraint_count": 5
+  },
+  "changes": [
+    {
+      "file": "user_source/hdl_source/isp/display_filter.v",
+      "before_sha256": "b9380ab91de2489b1bf3717cd0b58be12fdfc1d881e5213981e94228970455d7",
+      "sha256": "87bcee3b949bcd635ca23ce4df72af0a88fafd2bc6542f871003426c2fa439be"
+    },
+    {
+      "file": "user_source/hdl_source/isp/wb/wb_balance_96.v",
+      "before_sha256": "cfe32ddd028d4b06131c6de97fa05e9934cd5e7534dde80f975a916b0f5d66a2",
+      "sha256": "17f1bad444d8edd5f77c5cab205ac611131ae643c3a472a0c31160317f7344ec"
+    },
+    {
+      "file": "user_source/hdl_source/ui/wb_ui_control.v",
+      "before_sha256": "5b89b077037ebd3976363b676ad5a47a9b3163ff489ad7084e63bda7486eeec8",
+      "sha256": "7bcfae4dc5ed71c9381b7aaac9425f0eb89b2ba4f7daa29ab3f4217cda4bdc6d"
+    },
+    {
+      "file": "user_source/hdl_source/ui/wb_ui_font.hex",
+      "before_sha256": "695b47dca191931ded592957b9f2253be4ae3d1973a9b13f6fcbaebd3769e01d",
+      "sha256": "40372e0ab8436916528e6f536d99f9e9a9ebfecf3956336fbde6cd723ff62ae5"
+    },
+    {
+      "file": "user_source/hdl_source/ui/wb_ui_font.v",
+      "before_sha256": "ba9d8e6f49b4323f3a5d7ad20f9807766e0d0517a200b09d1b58f8b9084fbd3d",
+      "sha256": "e367d475bd2a68f6e8728259cd21ba5c08ba08316d5790a4c69529a7b97765c5"
+    },
+    {
+      "file": "user_source/hdl_source/ui/wb_ui_overlay.v",
+      "before_sha256": "6cfa8533ca1c1f107993385021cccbab776665894566d4c6cc51d629d6cfda0f",
+      "sha256": "c85abdc1b59b057814abb55dbea4897e15c3ac33283e981864a3db1fe4308e2f"
+    },
+    {
+      "file": "user_source/hdl_source/ui/wb_ui_text.hex",
+      "before_sha256": "adb99906c1828c6e0a1df2c884ee58e9c74d2f51bb0029ecde78694cea7e588e",
+      "sha256": "5cad99e078eea113bef3689910fc37c7d94aae1975dfc801fe2fb1df46171375"
+    }
+  ]
+}

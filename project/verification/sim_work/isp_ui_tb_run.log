@@ -1,0 +1,2 @@
+PASS ISP/WB/AE hierarchy, four metering modes and independent overlay switch, manual-only controls, independent WB, atomic live-gain handoff and nested return
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\isp_ui_tb.sv:48: $finish called at 15020000 (1ps)

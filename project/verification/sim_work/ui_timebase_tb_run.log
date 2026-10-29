@@ -1,0 +1,2 @@
+PASS ui_timebase_tb: actual 25 MHz clock rejects 4-ms swipe against 3-ms test limit, accepts 1.6-ms left swipe on release, and stationary long press stays inactive
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\ui_timebase_tb.sv:20: $finish called at 6800720000 (1ps)

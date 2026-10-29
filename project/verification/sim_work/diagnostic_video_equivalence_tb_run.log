@@ -1,0 +1,2 @@
+PASS diagnostic reader: original/new every-cycle pixel/address/control equivalence for 1843200 active pixels, correct wrap/saturation and actual address-edge age samples; full 1024x600 crop/pixel byte order with async DDR/DSI, delayed returns/stalls, 614400 exact pixels, credit-based FIFO protection, one underflow event and next-frame recovery
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\diagnostic_video_equivalence_tb.sv:74: $finish called at 46427228280 (1ps)

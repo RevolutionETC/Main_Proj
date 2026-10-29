@@ -1,0 +1,2 @@
+PASS full-resolution components: independent 4-connected pixel oracle, one-pixel gap, late bridge union, touching red/blue/green, true green labels, diagonal-only separation, empty frame, overflow rejection and immutable bank handoff
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\rgb\component_tb.sv:54: $finish called at 5363810000 (1ps)

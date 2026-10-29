@@ -1,0 +1,5 @@
+{
+  "source": "C:\\APP2\\ALTD\\sim_release\\ph1p\\ph1p_logic_buf.v",
+  "sha256": "1576ac453d3258f34b60ffab78d08410fd5fa76c107c0e3a24ca47419dc33673",
+  "extracted": "unencrypted functional prefix only, followed by endmodule; protected text excluded; buf lbuf(o,i) unchanged"
+}

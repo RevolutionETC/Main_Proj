@@ -1,11 +1,8 @@
 {
-  "date": "2026-10-18",
-  "repository": "https://github.com/Hust508/Main_Proj.git",
-  "integration_branch": "Yproject",
-  "sources": {
-    "Hproject": "d49e7f8",
-    "Yproject": "cca8107",
-    "main_before_merge": "dfc0631"
+  "date": "2026-10-24 Asia/Shanghai",
+  "inputs": {
+    "ISP_HIST_SC500_ROUTE_FIX_20261020.zip": "286b4e299d5151f4298892335c05566653c4bf2c5ea54c59d39cf8550aa094c4",
+    "lab_rgb_coords_hud_DSI_SC500_7inch.zip": "d04c92af23b5cd7a267894aeeb7db8a0b8d3fbb8e97b416308468cc87464509b"
   },
-  "policy": "Hproject UI and camera controls are primary; Yproject image-style work is integrated through a unified filter bank."
+  "board_tested": false
 }

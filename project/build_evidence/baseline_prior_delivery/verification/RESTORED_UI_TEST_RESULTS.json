@@ -1,0 +1,108 @@
+{
+  "scope": "Actual native Icarus simulations on restored res27 UI source; all runner process exits observed0; no historical passes reused",
+  "tests": {
+    "ui_control_tb": {
+      "passed": true,
+      "observed_native_process_exit_code": 0,
+      "summary": "PASS UI three-mode WB and four environment presets; all 76 manual K steps retained across every preset and AWB; exact WB hitboxes, left-swipe release opening, inactive long press, all eight display choices, shared gain and fault cancellation",
+      "log": "verification/sim_work/ui_control_tb_run.log",
+      "log_sha256": "898f1e286fa23f9fcafd46e4e1787506788dbece63b21f0f5ce71235b56aeea0"
+    },
+    "shift_ui_tb": {
+      "passed": true,
+      "observed_native_process_exit_code": 0,
+      "summary": "PASS manual UI nested back, reference B5/G6 mapping, drag/clamp, AWB target-control isolation and coherent 39-bit config",
+      "log": "verification/sim_work/shift_ui_tb_run.log",
+      "log_sha256": "e8ed377b7cd5dd8beb5826f26f16cf684fe7f1bed8674e5f4fa599888d2b40f6"
+    },
+    "histogram_ui_tb": {
+      "passed": true,
+      "observed_native_process_exit_code": 0,
+      "summary": "PASS ISP histogram menu, enable/auto/manual, all 101 drag values, endpoint capture, disabled/auto guards, restore/memory, multitouch cancellation WB manual-K independence and restored display-choice navigation",
+      "log": "verification/sim_work/histogram_ui_tb_run.log",
+      "log_sha256": "345383d80e0cf2af2ee7c289d0d83ff7b5631cc8442cf435caac3a508361ee38"
+    },
+    "effects_ui_tb": {
+      "passed": true,
+      "observed_native_process_exit_code": 0,
+      "summary": "PASS all eight display choices, coherent 52-bit mailbox and three-choice WB navigation",
+      "log": "verification/sim_work/effects_ui_tb_run.log",
+      "log_sha256": "da707ceaec128e3d989743eb02b538754e8dd577787e51ac01fbaa191ea18cbb"
+    },
+    "target_ui_tb": {
+      "passed": true,
+      "observed_native_process_exit_code": 0,
+      "summary": "PASS recognition switch only in function library: AWB former button inactive for OFF and ON, exact hitbox, one toggle per hold, preview/manual persistence, coherent 24-bit asynchronous mailbox",
+      "log": "verification/sim_work/target_ui_tb_run.log",
+      "log_sha256": "6dc520bd07423e47c393c3114549a3ba5273c013d9b8752ea9cf03bb14840443"
+    },
+    "bars_control_tb": {
+      "passed": true,
+      "observed_native_process_exit_code": 0,
+      "summary": "PASS bar controls: function-library third-row exact hitbox, single held gesture, bounce/multitouch/offline cancellation, preview/reopen persistence, reset-visible default, independent tracking/watermark, AWB removed control inert, coherent unchanged-width 52-bit config using bit18 only",
+      "log": "verification/sim_work/bars_control_tb_run.log",
+      "log_sha256": "d8f9505ff409edb93f2b3e5b983475186ea9480dd8f22eb583be99f486d1e24f"
+    },
+    "swipe_control_tb": {
+      "passed": true,
+      "observed_native_process_exit_code": 0,
+      "summary": "PASS left-swipe controller: 26 reset-isolated gestures, dx100/dy80 bounds, arbitrary start, release-coordinate independence, latest-point/vertical excursion/timeout cancellation, inactive long press, multitouch/offline/bounce protection, no click-through, exact fourth main-menu information button and page13 back, preserved feature controls",
+      "log": "verification/sim_work/swipe_control_tb_run.log",
+      "log_sha256": "036069cf6ae4d4c00861568e5a2a8968b88410efff36c6d102098d22467b79ad"
+    },
+    "ui_optimized_equivalence_tb": {
+      "passed": true,
+      "observed_native_process_exit_code": 0,
+      "summary": "PASS UI full-output equivalence: 2457600 pixels and 2464820 cycles across preview/HUD, information, full colour-shift grid and histogram pages; all pixels, sync/tag/histogram control and frame atomicity identical to frozen INFO_SWIPE baseline",
+      "log": "verification/sim_work/ui_optimized_equivalence_tb_run.log",
+      "log_sha256": "801436fcf85c7004f5adbde6b65a15d30a199b797e66433c400d4294f778743b"
+    },
+    "info_bars_equivalence_tb": {
+      "passed": true,
+      "observed_native_process_exit_code": 0,
+      "summary": "PASS existing-bar exact equivalence: 1187008 compared top/bottom pixels across pages0..13 and both hidden/offline preview states, all status/count/FPS/DET/LAT/filter/WB/gain pixels unchanged; only intentional gesture-hint text excluded",
+      "log": "verification/sim_work/info_bars_equivalence_tb_run.log",
+      "log_sha256": "e52f2e4b8e49ccb68cf1b60ef0b0b3096c0316adaf4684e4374f9ed4313a3653"
+    },
+    "overlay_tb": {
+      "passed": true,
+      "observed_native_process_exit_code": 0,
+      "summary": "PASS four complete WB UI frames: AWB/manual selected states across three WB choices, manual10000K, 26 independent alpha/bar/preview probes, fixed control latency and frame-atomic mode/page",
+      "log": "verification/sim_work/overlay_tb_run.log",
+      "log_sha256": "9e412d3ed5699c79c1e9908109b19e4a1ca1c300042cc106fcdac999b8bf9fb3"
+    },
+    "info_panel_tb": {
+      "passed": true,
+      "observed_native_process_exit_code": 0,
+      "summary": "PASS information page: 1264890 output pixels, 109728 independent decimal/ASCII pixels; 000/009/010/099/100/255 and invalid age, all age colours, unchanged 3-stage sync, both bar-hide states and mid-frame telemetry edits ignored",
+      "log": "verification/sim_work/info_panel_tb_run.log",
+      "log_sha256": "8c8a0f1643ea2a0d935608cc5f14ab0cf4214f6a73cfae0722a46381ba95eb3c"
+    },
+    "restored_ui_mailbox_tb": {
+      "passed": true,
+      "observed_native_process_exit_code": 0,
+      "summary": "PASS restored WB 52-bit mailbox: 23 coherent asynchronous observations, mode1 transmitted in full two-bit field, bit19 reserved and bit18 bars independent, four preset exact hitboxes and held-contact cancellation, manual K memory, AWB isolation and reset defaults",
+      "log": "verification/sim_work/restored_ui_mailbox_tb_run.log",
+      "log_sha256": "578fc9fdc6f21a76c5049c5cbda3cea58c3dd27bce2123fb78340b213b66fdb1"
+    },
+    "restored_ui_overlay_tb": {
+      "passed": true,
+      "observed_native_process_exit_code": 0,
+      "summary": "PASS restored UI independent literal raster: 16 frames, all three WB selected states, all four presets plus manual-no-highlight, eight filter selected states, 651680 exact background/glyph probes including 57139 foreground pixels, unchanged 50-percent blend, frame-atomic mode/index/filter and control latency",
+      "log": "verification/sim_work/restored_ui_overlay_tb_run.log",
+      "log_sha256": "6c06e6c01bb1d7f579876b479c6203a0d5e2179675565749df5dff0c1a99facd"
+    }
+  },
+  "ui_source_sha256": {
+    "user_source/hdl_source/ui/wb_ui_control.v": "7bcfae4dc5ed71c9381b7aaac9425f0eb89b2ba4f7daa29ab3f4217cda4bdc6d",
+    "user_source/hdl_source/ui/wb_ui_overlay.v": "c85abdc1b59b057814abb55dbea4897e15c3ac33283e981864a3db1fe4308e2f",
+    "user_source/hdl_source/ui/wb_ui_font.v": "e367d475bd2a68f6e8728259cd21ba5c08ba08316d5790a4c69529a7b97765c5",
+    "user_source/hdl_source/ui/wb_ui_font.hex": "40372e0ab8436916528e6f536d99f9e9a9ebfecf3956336fbde6cd723ff62ae5",
+    "user_source/hdl_source/ui/wb_ui_text.hex": "5cad99e078eea113bef3689910fc37c7d94aae1975dfc801fe2fb1df46171375",
+    "user_source/hdl_source/ui/wb_ui_text_rom.v": "30ea513c18317d9c3bc6e3b02795a7ef1eae72704ccd311744ceb95f69b221f0",
+    "tools/generate_wb_ui.py": "ed50417c1672f6732b522ff6bebf2758596f59ab9822237c73baa5805ecc28ef",
+    "tools/wb_ui_overlay.template.v": "a7f5ff253ed73203d93911605800e964eb7e830f668c18800026851f96656b4c"
+  },
+  "literal_oracle": "verification/generate_restored_ui_oracle.py independently renders hard-coded Chinese text with Windows MSYH font and does not read production font/text/generator/RTL",
+  "hardware_tested": false
+}

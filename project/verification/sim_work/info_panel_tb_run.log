@@ -1,0 +1,2 @@
+PASS information page: 1264890 output pixels, 109728 independent decimal/ASCII pixels; 000/009/010/099/100/255 and invalid age, all age colours, unchanged 3-stage sync, both bar-hide states and mid-frame telemetry edits ignored
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\info_panel_tb.sv:119: $finish called at 12848190000 (1ps)

@@ -1,0 +1,17 @@
+﻿{
+  "scope": "Historical design references only; not current native or regression qualification.",
+  "root_records": [
+    "build_evidence/baseline_prior_delivery/root/BUILD_VARIANT.json",
+    "build_evidence/baseline_prior_delivery/root/DELIVERY_MANIFEST.json",
+    "build_evidence/baseline_prior_delivery/root/NATIVE_QUALIFICATION.json",
+    "build_evidence/baseline_prior_delivery/root/README_整合说明.md",
+    "build_evidence/baseline_prior_delivery/root/RESTORATION_SOURCE_AUDIT.json",
+    "build_evidence/baseline_prior_delivery/root/ROUTED_CONFIG_HASHES.json",
+    "build_evidence/baseline_prior_delivery/root/ROUTED_SOURCE_HASHES.json",
+    "build_evidence/baseline_prior_delivery/root/SOURCE_CHANGES.json",
+    "build_evidence/baseline_prior_delivery/root/SOURCE_VALIDATION.json",
+    "build_evidence/baseline_prior_delivery/root/设计修改与优化建议.md",
+    "build_evidence/baseline_prior_delivery/root/资源与验证结果.md"
+  ],
+  "notes": "Historical metadata can reference older raw logs not included here. Current actual runs are in verification/OPT27_CURRENT_TEST_RESULTS.json."
+}

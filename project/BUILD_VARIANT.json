@@ -1,0 +1,74 @@
+﻿{
+  "version": "20261028_RESTORED_ROUTED",
+  "device": "PH1P35MDG324",
+  "targets": 8,
+  "contour_runs_per_frame": 4096,
+  "labels": 128,
+  "image_modes": {
+    "original": 0,
+    "grayscale": 1,
+    "cartoon": 2,
+    "negative": 3,
+    "pixel_art": 4,
+    "edge": 5,
+    "retro": 6,
+    "visual_enhancement": 7
+  },
+  "restored_features": [
+    "grayscale",
+    "negative",
+    "cartoon",
+    "white_balance_presets"
+  ],
+  "white_balance_modes": [
+    "automatic",
+    "preset",
+    "manual"
+  ],
+  "white_balance_mode_encoding": {
+    "automatic": 0,
+    "preset": 1,
+    "manual": 2
+  },
+  "white_balance_presets_removed": false,
+  "white_balance_presets_kelvin": [
+    3000,
+    5500,
+    6500,
+    7500
+  ],
+  "white_balance_preset_indices": [
+    5,
+    30,
+    40,
+    50
+  ],
+  "white_balance_preset_port": false,
+  "manual_kelvin_range": [
+    2500,
+    10000
+  ],
+  "manual_kelvin_steps": 76,
+  "manual_kelvin_remembered": true,
+  "manual_ab_gm_preserved": true,
+  "manual_ab_gm_mode": 2,
+  "ui_config_width": 52,
+  "white_balance_mode_bits": [
+    21,
+    20
+  ],
+  "reserved_ui_bit": 19,
+  "hide_bars_bit": 18,
+  "hide_bars_reset": 0,
+  "ui_opacity_fraction": 0.5,
+  "popup_overlays_bars": true,
+  "information_page": 13,
+  "information_button_parent_page": 9,
+  "information_button_row": 4,
+  "swipe_min_x": 100,
+  "swipe_max_y": 80,
+  "swipe_maximum_ms": 1000,
+  "open_on_release": true,
+  "former_long_press_opens_menu": false,
+  "physical_timing_qualified": true
+}

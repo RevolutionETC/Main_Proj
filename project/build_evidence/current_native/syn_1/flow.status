@@ -1,0 +1,23 @@
+Location         : C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\p27r\td_project\wb_ui_dsi_Runs\syn_1
+Running with     : Tang Dynasty v6.2.168116
+                   Copyright (c) 2012-2025 Anlogic Inc.
+Top Model        : design_top_wrapper
+Device           : PH1P35MDG324
+Speed            : 3
+
+Timing Mode      : basic
+Setup            : WNS  -749ps  TNS    -1748ps  NUM_FEPS     4
+Hold             : WNS   114ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+---------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time   |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+---------------------------------------------------------------------------------------------------
+  optimize_gate  |    1     |  2m37s(75%)  |   156(76%)    |       1669        |       1669        
+  optimize_rtl   |    1     |   50s(24%)   |    48(23%)    |       1259        |       1370        
+  import_device  |    1     |    1s(0%)    |     1(0%)     |        324        |        324        
+    read_adc     |    1     |    0s(0%)    |     0(0%)     |        886        |        886        
+    read_sdc     |    3     |    0s(0%)    |     0(0%)     |        881        |        886        
+---------------------------------------------------------------------------------------------------
+      total      |    7     |    3m28s     |      205      |       1669        |       1669        
+---------------------------------------------------------------------------------------------------

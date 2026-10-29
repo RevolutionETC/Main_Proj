@@ -1,0 +1,2 @@
+PASS manual UI nested back, reference B5/G6 mapping, drag/clamp, AWB target-control isolation and coherent 39-bit config
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\tint_tb.sv:81: $finish called at 257060000 (1ps)

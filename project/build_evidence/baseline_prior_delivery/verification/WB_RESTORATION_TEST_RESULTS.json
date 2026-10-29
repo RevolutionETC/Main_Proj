@@ -1,0 +1,58 @@
+{
+  "time": "2026-10-28T10:08:58.937792+08:00",
+  "runner_observed_exit_code": 0,
+  "native_command": "python res27/verification/run_checks.py --iverilog-bin rgb_rebuild_work/deps/iverilog/app/bin --jobs 2 wb_presets_backend_tb wb_unit_tb awb_guard_tb tint_product_tb",
+  "tested_source_sha256": {
+    "user_source\\hdl_source\\isp\\wb\\wb_balance_96.v": "17f1bad444d8edd5f77c5cab205ac611131ae643c3a472a0c31160317f7344ec",
+    "user_source\\hdl_source\\isp\\wb\\wb_gain_lut.v": "dd19311817ea3d348e0f0413c459026334420278d8dbe8ff2e1a802dcda929ae",
+    "user_source\\hdl_source\\isp\\wb\\wb_ratio_seq.v": "893be3078e5ba4734b56f4ca3ed9c88f2bdfaed6043b26671413512a25102781",
+    "user_source\\hdl_source\\isp\\wb\\wb_tint_96.v": "9c062f575b8e6b803074d405dc9327a86a351ffd34d0e6a2e9bcf0d5fc9ea755"
+  },
+  "tests": [
+    {
+      "test": "wb_presets_backend_tb",
+      "native_compile_exit_code": 0,
+      "native_run_exit_code": 0,
+      "pass_line": "PASS restored WB presets: all 76 Kelvin values plus clamp, four preset indices 5/30/40/50, 81792 four-lane oracle pixels, rounding/saturation, mid-frame atomicity, original all-mode equivalence and qualified auto/manual path equivalence (57453 cycles)",
+      "run_log": "verification\\sim_work\\wb_presets_backend_tb_run.log",
+      "run_log_sha256": "792e12958b8f21aa5b0f906613e98d44c65767a845673bcd79425a0a56e1d807",
+      "elab_log": "verification\\sim_work\\wb_presets_backend_tb_elab.log",
+      "elab_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "test": "wb_unit_tb",
+      "native_compile_exit_code": 0,
+      "native_run_exit_code": 0,
+      "pass_line": "PASS WB all 76 Kelvin entries in preset1 and manual2, auto0 convergence, rounding/clipping/four lanes, first-pixel SOF, frame-atomic config and dark-frame hold; 112340 pixels",
+      "run_log": "verification\\sim_work\\wb_unit_tb_run.log",
+      "run_log_sha256": "34b827611255501dcf2bc1d129f50a2876f43dc6802b0cf2bf692f476e7c7f94",
+      "elab_log": "verification\\sim_work\\wb_unit_tb_elab.log",
+      "elab_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "test": "awb_guard_tb",
+      "native_compile_exit_code": 0,
+      "native_run_exit_code": 0,
+      "pass_line": "PASS AWB complete beat/line count, receiver verdict, minimum sample proportion, dark/clipped rejection, luminance-jump hold, maximum Q10 step8 and stable-frame recovery",
+      "run_log": "verification\\sim_work\\awb_guard_tb_run.log",
+      "run_log_sha256": "902482b656cb80727688cbd95a26a0ff11c79005b46c9d2ff82da325851e1c9a",
+      "elab_log": "verification\\sim_work\\awb_guard_tb_elab.log",
+      "elab_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "test": "tint_product_tb",
+      "native_compile_exit_code": 0,
+      "native_run_exit_code": 0,
+      "pass_line": "PASS exact residual tint pipeline: all 4864 pixel/offset combinations, all four lanes, rounding and clipping",
+      "run_log": "verification\\sim_work\\tint_product_tb_run.log",
+      "run_log_sha256": "c719c1ed4e13caa26213f267b711a5e2860eb0b4e04cd39a2e925523a62fc135",
+      "elab_log": "verification\\sim_work\\tint_product_tb_elab.log",
+      "elab_log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "limits": [
+    "Auto pixel oracle uses current AWB gains; independent convergence/guard expectations and two frozen backend comparisons separately verify AWB behavior.",
+    "Preset tint gate verified structurally in isp_top; exact tint arithmetic verified with native all-offset test.",
+    "Reserved mode3 is not emitted by UI and not part of restoration contract."
+  ]
+}

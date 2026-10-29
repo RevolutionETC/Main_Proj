@@ -1,0 +1,2 @@
+PASS 125 independent raster masks: rotations, ellipse aspect, rectangle aspect, four triangle families, perspective, one-pixel contour jitter plus clipped/small/low-fill negatives; maximum cycles=60813
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\rgb\moment_tb.sv:30: $finish called at 36588100000 (1ps)

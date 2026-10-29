@@ -1,0 +1,2 @@
+PASS left-swipe controller: 26 reset-isolated gestures, dx100/dy80 bounds, arbitrary start, release-coordinate independence, latest-point/vertical excursion/timeout cancellation, inactive long press, multitouch/offline/bounce protection, no click-through, exact fourth main-menu information button and page13 back, preserved feature controls
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\swipe_control_tb.sv:85: $finish called at 107910000 (1ps)

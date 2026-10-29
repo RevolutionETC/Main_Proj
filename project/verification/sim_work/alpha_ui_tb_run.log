@@ -1,0 +1,2 @@
+PASS transparent ISP UI: 5 complete frames, exact 50-percent panel/button arithmetic, live left preview, retained dark top/footer, 43 independent pixel probes and RTL previews
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\alpha_ui_tb.sv:55: $finish called at 30841040000 (1ps)

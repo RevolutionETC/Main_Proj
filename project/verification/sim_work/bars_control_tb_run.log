@@ -1,0 +1,2 @@
+PASS bar controls: function-library third-row exact hitbox, single held gesture, bounce/multitouch/offline cancellation, preview/reopen persistence, reset-visible default, independent tracking/watermark, AWB removed control inert, coherent unchanged-width 52-bit config using bit18 only
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\bars_control_tb.sv:91: $finish called at 76100000 (1ps)

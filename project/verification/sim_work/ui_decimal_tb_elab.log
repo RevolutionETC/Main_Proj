@@ -1,0 +1,2 @@
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\isp_ui_tb.sv:55: warning: Port 3 (I_config) of wb_ui_overlay expects 52 bits, got 43.
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\isp_ui_tb.sv:55:        : Padding 9 high bits of the port.

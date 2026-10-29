@@ -18,6 +18,8 @@ module video_in #(parameter FRAME_WORDS=172800)(
  reg [149:0] entry;reg push;reg [2:0] marker_mode;
  reg [15:0] camera_sequence,marker_sequence;
  wire [15:0] camera_sequence_next=camera_sequence+1'b1;
+ // Register the Gray bus before the CDC synchronizer: no binary-counter glitches.
+ reg [15:0] camera_sequence_gray;
  always @(*)begin
   push=0;entry=0;
   if(I_camera_frame_start)begin push=1;entry={camera_sequence_next,I_camera_mode,I_mipi_rx_error|overflow|pending_marker,1'b1,I_camera_valid,I_camera_data};end
@@ -25,9 +27,9 @@ module video_in #(parameter FRAME_WORDS=172800)(
   else if(I_camera_valid&&!drop_camera)begin push=1;entry={16'd0,I_camera_mode,1'b0,1'b0,1'b1,I_camera_data};end
  end
  always @(posedge I_camera_clk or negedge I_rst_n)
- if(!I_rst_n)begin camera_sequence<=0;marker_sequence<=0;pending_marker<=0;drop_camera<=1;overflow<=0;marker_bad<=1;marker_mode<=0;O_fifo_overflows<=0;end
+ if(!I_rst_n)begin camera_sequence<=0;camera_sequence_gray<=0;marker_sequence<=0;pending_marker<=0;drop_camera<=1;overflow<=0;marker_bad<=1;marker_mode<=0;O_fifo_overflows<=0;end
  else if(I_camera_frame_start)begin
-  camera_sequence<=camera_sequence_next;marker_sequence<=camera_sequence_next;
+  camera_sequence<=camera_sequence_next;camera_sequence_gray<=(camera_sequence_next>>1)^camera_sequence_next;marker_sequence<=camera_sequence_next;
   marker_bad<=I_mipi_rx_error|overflow|pending_marker;
   marker_mode<=I_camera_mode;
   pending_marker<=full;drop_camera<=full;overflow<=full;
@@ -67,7 +69,6 @@ module video_in #(parameter FRAME_WORDS=172800)(
  assign O_ddr_user_addr=base(writer)+{4'd0,words,3'b000};
  assign O_slot_modes=slot_modes;
  assign O_slot_sequences=slot_sequences;
- wire [15:0] camera_sequence_gray=(camera_sequence>>1)^camera_sequence;
  (* async_reg="true" *) reg [15:0] sequence_gray_sync1,sequence_gray_sync2;
  function [15:0] gray_to_binary(input [15:0] gray);
  integer g;begin gray_to_binary[15]=gray[15];for(g=14;g>=0;g=g-1)gray_to_binary[g]=gray_to_binary[g+1]^gray[g];end

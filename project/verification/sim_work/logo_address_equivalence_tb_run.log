@@ -1,0 +1,2 @@
+PASS logo address optimization: all32768 addresses forward/reverse plus32768 jumps, 98304 exact original RGBA outputs, original two-RAM latency, transparent borders and out-of-image blanking; 19058 active pixels
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\logo_address_equivalence_tb.sv:46: $finish called at 983056000 (1ps)

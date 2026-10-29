@@ -1,0 +1,2 @@
+PASS restored WB 52-bit mailbox: 23 coherent asynchronous observations, mode1 transmitted in full two-bit field, bit19 reserved and bit18 bars independent, four preset exact hitboxes and held-contact cancellation, manual K memory, AWB isolation and reset defaults
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\restored_ui_mailbox_tb.sv:43: $finish called at 33750000 (1ps)

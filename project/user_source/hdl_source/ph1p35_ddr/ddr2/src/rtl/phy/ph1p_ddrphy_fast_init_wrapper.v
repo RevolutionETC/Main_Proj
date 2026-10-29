@@ -366,6 +366,37 @@ reg   [DX_NUM*9-1:0] init_wdq_r  ; // synthesis keep
 reg   [DX_NUM*9-1:0] init_rdqsp_r; // synthesis keep
 reg   [DX_NUM*9-1:0] init_rdqsn_r; // synthesis keep
 
+// Explicit physical combinational buffers; all capture FF cycles stay unchanged.
+wire [DX_NUM*9-1:0] init_gate_capture;
+genvar gate_hold_bit;
+generate
+    for (gate_hold_bit = 0; gate_hold_bit < DX_NUM*9; gate_hold_bit = gate_hold_bit+1) begin : gate_capture_path
+        if (gate_hold_bit == 17) begin : hold_buffer
+            PH1P_LOGIC_BUF u_init_gate17_hold_buffer (
+                .i (init_gate[gate_hold_bit]),
+                .o (init_gate_capture[gate_hold_bit])
+            );
+        end else begin : direct_capture
+            assign init_gate_capture[gate_hold_bit] = init_gate[gate_hold_bit];
+        end
+    end
+endgenerate
+
+wire [DX_NUM*9-1:0] init_rdqsn_capture;
+genvar rdqsn_hold_bit;
+generate
+    for (rdqsn_hold_bit = 0; rdqsn_hold_bit < DX_NUM*9; rdqsn_hold_bit = rdqsn_hold_bit+1) begin : rdqsn_capture_path
+        if (rdqsn_hold_bit == 3) begin : hold_buffer
+            PH1P_LOGIC_BUF u_init_rdqsn3_hold_buffer (
+                .i (init_rdqsn[rdqsn_hold_bit]),
+                .o (init_rdqsn_capture[rdqsn_hold_bit])
+            );
+        end else begin : direct_capture
+            assign init_rdqsn_capture[rdqsn_hold_bit] = init_rdqsn[rdqsn_hold_bit];
+        end
+    end
+endgenerate
+
 always @ (posedge clk or negedge rst_n)
 begin
     if (rst_n == 1'b0) begin
@@ -386,11 +417,11 @@ begin
         usr_vld_r    <= usr_vld    ;
         init_wsl_r   <= init_wsl   ;
         init_rsl_r   <= init_rsl   ;
-        init_gate_r  <= init_gate  ;
+        init_gate_r  <= init_gate_capture;
         init_wdqs_r  <= init_wdqs  ;
         init_wdq_r   <= init_wdq   ;
         init_rdqsp_r <= init_rdqsp ;
-        init_rdqsn_r <= init_rdqsn ;
+        init_rdqsn_r <= init_rdqsn_capture;
         phy_rst_n    <= (&phy_rst_n_int) & (~usr_rst);
     end
 end

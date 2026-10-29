@@ -1,0 +1,24 @@
+{
+  "references": [
+    {
+      "reference": "integration_20261024\\buffer8\\user_source\\hdl_source\\isp\\wb\\wb_balance_96.v",
+      "original_sha256": "d06819ee8ba25501e6eebfea2c32a5a57cc0cb7de03e587b04efce45a483e315",
+      "renamed_module": "wb_balance_original_restore_ref",
+      "copy_sha256": "d95163f65ac436868f2a6e23b6b7171fa949ece7e5a5ad05468b6d878d3a844e",
+      "modification": "module identifier only"
+    },
+    {
+      "reference": "opt27d\\user_source\\hdl_source\\isp\\wb\\wb_balance_96.v",
+      "original_sha256": "cfe32ddd028d4b06131c6de97fa05e9934cd5e7534dde80f975a916b0f5d66a2",
+      "renamed_module": "wb_balance_qualified_restore_ref",
+      "copy_sha256": "fb4cb6c5d6937d87a2034f59cedf3c5182e7ea2071df3a2a1c5768c1c84c627b",
+      "modification": "module identifier only"
+    }
+  ],
+  "reference_methods": [
+    "frozen original all mode output/control/gain/statistics equivalence",
+    "qualified baseline equivalence for retained mode0 and2",
+    "independent Kelvin CSV Q10 round/saturate oracle on 4 lanes"
+  ],
+  "tint_top_manual_only": true
+}

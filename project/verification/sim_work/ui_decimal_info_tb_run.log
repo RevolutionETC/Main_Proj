@@ -1,0 +1,2 @@
+PASS nine-field shared serial decimal converter: all256 values for each diagnostic counter, 42240 cycle comparisons prove original four values/deadlines unchanged, valid/invalid age and frame-atomic appended fields
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\ui_decimal_info_tb.sv:51: $finish called at 422450000 (1ps)

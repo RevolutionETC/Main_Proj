@@ -1,0 +1,2 @@
+PASS ISP histogram menu, enable/auto/manual, all 101 drag values, endpoint capture, disabled/auto guards, restore/memory, multitouch cancellation WB manual-K independence and restored display-choice navigation
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\histogram_ui_tb.sv:44: $finish called at 18390000 (1ps)

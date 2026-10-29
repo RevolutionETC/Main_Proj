@@ -150,20 +150,28 @@ module dsi_osd_overlay #(
     reg s1_vs, s1_hs, s1_de;
     reg [23:0] s1_rgb;
     reg s1_logo, s1_text;
+    reg [23:0] s2_rgb;
+    reg s2_logo,s2_text;
     always @(posedge I_clk or negedge I_rst_n) begin
         if (!I_rst_n) begin
             s1_vs<=0; s1_hs<=0; s1_de<=0; s1_rgb<=0;
             s1_logo<=0; s1_text<=0;
-            O_vsync<=0; O_hsync<=0; O_de<=0; O_data<=0;
+            O_vsync<=0; O_hsync<=0; O_de<=0;
+            s2_rgb<=0;s2_logo<=0;s2_text<=0;
         end else begin
             s1_vs<=I_vsync; s1_hs<=I_hsync; s1_de<=I_de; s1_rgb<=I_data;
             s1_logo<=logo_region && I_enable;
             s1_text<=text_region && char_bits[15-char_col] && I_enable;
             O_vsync<=s1_vs; O_hsync<=s1_hs; O_de<=s1_de;
-            if (!s1_de) O_data<=0;
-            else if (s1_logo && logo_pixel[24]) O_data<=logo_pixel[23:0];
-            else if (s1_text) O_data<=TEXT_COLOR;
-            else O_data<=s1_rgb;
+            s2_rgb<=s1_rgb;s2_logo<=s1_logo;s2_text<=s1_text;
         end
+    end
+    // The second ROM stage is the existing second video stage. A final small
+    // combinational mux preserves exactly two clocks of overlay latency.
+    always @(*)begin
+        if(!O_de)O_data=0;
+        else if(s2_logo&&logo_pixel[24])O_data=logo_pixel[23:0];
+        else if(s2_text)O_data=TEXT_COLOR;
+        else O_data=s2_rgb;
     end
 endmodule

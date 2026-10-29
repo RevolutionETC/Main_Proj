@@ -1,0 +1,2 @@
+PASS restored UI independent literal raster: 16 frames, all three WB selected states, all four presets plus manual-no-highlight, eight filter selected states, 651680 exact background/glyph probes including 57139 foreground pixels, unchanged 50-percent blend, frame-atomic mode/index/filter and control latency
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\restored_ui_overlay_tb.sv:73: $finish called at 20681650000 (1ps)

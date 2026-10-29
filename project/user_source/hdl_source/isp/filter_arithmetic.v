@@ -15,17 +15,7 @@ module unsigned_gain_product #(parameter GAIN_BITS=10)(
  input wire [7:0] pixel,input wire [GAIN_BITS-1:0] gain,
  output wire [GAIN_BITS+7:0] product
 );
- generate if(GAIN_BITS==10)begin:DSP_LOW
-  wire [16:0] low=pixel*gain[8:0];
-  assign product={1'b0,low}+(gain[9]?{1'b0,pixel,9'd0}:18'd0);
- end else begin:SHIFT_ADD
- wire [GAIN_BITS+7:0] a[0:7],b[0:3],c[0:1];
- genvar k;
- for(k=0;k<8;k=k+1)begin:P
-  assign a[k]=pixel[k]?({8'd0,gain}<<k):{(GAIN_BITS+8){1'b0}};
- end
- for(k=0;k<4;k=k+1)begin:B assign b[k]=a[k*2]+a[k*2+1];end
- for(k=0;k<2;k=k+1)begin:C assign c[k]=b[k*2]+b[k*2+1];end
- assign product=c[0]+c[1];
- end endgenerate
+ // Both gain widths use the same DSP-friendly unsigned product pattern.
+ // Scalar display processing needs only six gain multipliers in total.
+ assign product=pixel*gain;
 endmodule

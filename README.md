@@ -1,32 +1,22 @@
-# Hust508 FPGA 摄像头统一工程
+# Hust508 最终工程
 
-最新工程位于 **[project/](project/)**。本版在统一 UI、白平衡和 RGB 主目标功能的基础上，合入 Lproject 的复古 / 视觉增强滤镜，并恢复原触屏例程的安路 Logo、文字及显示帧计数水印。
+当前主分支的最新工程为 **20261028_RESTORED_ROUTED**，由最终交付包 `ISP_RGB_SC500_RESTORED_ROUTED_20261028.zip` 导入，工程入口位于 **[project/](project/)**。
 
-| 入口 | 文件 |
+| 内容 | 入口 |
 |---|---|
-| 详细整合说明、来源、复用和兼容变化 | [INTEGRATION_20261018.md](docs/INTEGRATION_20261018.md) |
-| 当前 UI / 操作与接口 | [统一版说明](docs/latest/README.md) |
-| 延迟指标、实现和验收方法 | [采集到显示的延迟可视化](docs/LATENCY_VISUALIZATION.md) |
+| 完整原始压缩包 | [下载最终工程 ZIP](downloads/ISP_RGB_SC500_RESTORED_ROUTED_20261028.zip) |
+| 最终工程说明与操作 | [README_整合说明.md](project/README_整合说明.md) |
+| 推荐压缩烧写文件 | [DSI_ISP_RGB_INTEGRATED_SC500_7inch_compress.bit](project/DSI_ISP_RGB_INTEGRATED_SC500_7inch_compress.bit) |
+| 普通烧写文件 | [DSI_ISP_RGB_INTEGRATED_SC500_7inch.bit](project/DSI_ISP_RGB_INTEGRATED_SC500_7inch.bit) |
 | TD 工程 | [wb_ui_dsi.al](project/td_project/wb_ui_dsi.al) |
-| 推荐下载镜像 | [DSI_UNIFIED_SC500_7inch_compress.bit](project/DSI_UNIFIED_SC500_7inch_compress.bit) |
-| 普通镜像 | [DSI_UNIFIED_SC500_7inch.bit](project/DSI_UNIFIED_SC500_7inch.bit) |
-| 本次验证和最终时序 | [BUILD_REPORT.md](project/BUILD_REPORT.md) |
+| 资源与验证记录 | [资源与验证结果.md](project/资源与验证结果.md) |
+| 原生工具资格记录 | [NATIVE_QUALIFICATION.json](project/NATIVE_QUALIFICATION.json) |
+| 本次上传与校验说明 | [最终交付导入记录](docs/FINAL_DELIVERY_20261028.md) |
 
-- 单指长按预览约 800 ms，打开右侧设置面板；逐级回退返回。
-- 白平衡：自动、环境预设、手动色温、B/A 与 G/M 色偏、感光度。
-- 滤镜库：原图、黑白、动漫、负片、像素画、边缘、复古、视觉增强。
-- 功能库：原版 OSD 水印、RGB 单一主目标的 BALL/CUBE/UNKNOWN 标注，分别开关。
-- 实时性：预览页底栏显示采集画面落后当前摄像头进度的帧数，并以绿 / 黄 / 红提示积压等级。
-- 动漫、边缘和视觉增强共用空间窗口与 Sobel；形状分类器按阶段复用乘法器。
+本版保留八种图像模式、自动/环境预设/手动白平衡、AB/GM 色偏、八目标识别、半透明 ISP 菜单和画面信息页。预览画面**单指向左滑动**打开菜单；具体手势和页面行为以随包工程说明为准。
 
-摄像头仍采集 1280×720，显示中心裁剪的 1024×600；引脚和原时钟定义保持不变，新增处理域的 FIFO 另有明确的数据路径上限。平台为 MLKPAI-F02 / FC02、PH1P35MDG324 Speed 3、SC500CS、DSI / GT911 屏。实体相机画质和触屏仍需上板验收。
+随包记录为 45 项回归通过，TD 最终 SWNS `+0.067 ns`、HWNS `+0.020 ns`，DSP `34/40`。这些是 2026-10-28 交付包中的既有验证结果；本次上传核对了文件和对应记录的完整性，实物验收状态见包内说明。
 
-```powershell
-cd Main_Proj/project
-./build.ps1 -TdHome C:/APP2/ALTD
-python verification/generate_filter_fixtures.py
-./verification/run_sim.ps1 -VivadoBin C:/APP2/VIVADO/2025.1/Vivado/bin
-python verification/check_project.py
-```
+硬件：PH1P35MDG324、SC500CS、7 寸 DSI / 1024×600。建议将压缩包解压到较短路径，例如 `C:/FPGA/ISP_RGB`，保留内部目录结构。
 
-滤镜参考生成需要 Python 3.9+ / NumPy；UI 字模已交付，通常构建不需重新生成。`lab_*`、`downloads/` 是历史阶段工程和归档，最新工程和镜像以 `project/` 为准。更多来源及限制见整合说明。
+`project/` 内的 975 个文件与用户指定的最终压缩包逐字节一致。历史阶段目录 `lab_*` 和旧文档保留用于回溯；当前源码、界面和烧写文件以以上入口为准。

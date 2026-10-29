@@ -1,0 +1,2 @@
+PASS restored WB presets: all 76 Kelvin values plus clamp, four preset indices 5/30/40/50, 81792 four-lane oracle pixels, rounding/saturation, mid-frame atomicity, original all-mode equivalence and qualified auto/manual path equivalence (57453 cycles)
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\wb_presets_backend_tb.sv:72: $finish called at 574570000 (1ps)

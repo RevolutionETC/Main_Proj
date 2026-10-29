@@ -1,0 +1,2 @@
+PASS shared UI gain product: all 128 gain codes in manual and AE modes, exact original rounding and clipping, 256 combinations
+C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\ui_gain_math_tb.sv:17: $finish called at 2590000 (1ps)

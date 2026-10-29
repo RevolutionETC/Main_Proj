@@ -1,0 +1,1142 @@
+﻿{
+  "schema_version": 1,
+  "native_root": "C:\\Users\\Xuan\\.codex\\.chatgpt-projects\\g-p-6ac6609d5fac8191bbfcec16e35eed57\\p27r",
+  "project": "wb_ui_dsi",
+  "generated_utc": "2026-10-28T02:42:12.003733+00:00",
+  "status": "qualified",
+  "tool_timing_passed": true,
+  "failed_checks": [],
+  "checks": [
+    {
+      "name": "constraint_addition_changes_only_main_sdc",
+      "passed": true,
+      "detail": "td_project/wb_ui_dsi.sdc"
+    },
+    {
+      "name": "constraint_original_sdc_matches_known_baseline",
+      "passed": true
+    },
+    {
+      "name": "constraint_added_block_sha256",
+      "passed": true
+    },
+    {
+      "name": "constraint_original_prefix_and_only_appended_suffix",
+      "passed": true
+    },
+    {
+      "name": "constraint_addition_is_exact_first_stage_gray_pair",
+      "passed": true,
+      "detail": [
+        "set_max_delay -from [get_regs {u_video_in/camera_sequence_gray[*]}] -to [get_regs {u_video_in/sequence_gray_sync1[*]}] -datapath_only 7.500",
+        "set_false_path -hold -from [get_regs {u_video_in/camera_sequence_gray[*]}] -to [get_regs {u_video_in/sequence_gray_sync1[*]}]"
+      ]
+    },
+    {
+      "name": "constraint_addition_bound_to_unchanged_rtl_snapshot",
+      "passed": true
+    },
+    {
+      "name": "constraint_all_original_pin_timing_ip_files_recorded",
+      "passed": true,
+      "detail": {
+        "required": [
+          "user_source/constraints_source/pin.adc",
+          "user_source/constraints_source/timing.sdc",
+          "user_source/hdl_source/ph1p35_ddr/ddr2/src/adc/ddr2.adc",
+          "user_source/hdl_source/ph1p35_ddr/ddr2/src/sdc/ddr2.sdc",
+          "user_source/ip_source/w128_d512_fifo/w128_d512_fifo.tcl"
+        ],
+        "recorded": [
+          "user_source/constraints_source/pin.adc",
+          "user_source/constraints_source/timing.sdc",
+          "user_source/hdl_source/ph1p35_ddr/ddr2/src/adc/ddr2.adc",
+          "user_source/hdl_source/ph1p35_ddr/ddr2/src/sdc/ddr2.sdc",
+          "user_source/ip_source/w128_d512_fifo/w128_d512_fifo.tcl"
+        ]
+      }
+    },
+    {
+      "name": "constraint_all_original_pin_timing_ip_bytes_unchanged",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "constraint_endpoint_rtl_is_registered_gray_and_two_stage_sync",
+      "passed": true
+    },
+    {
+      "name": "source_frozen_hashes_match",
+      "passed": true,
+      "detail": {
+        "files_checked": 279,
+        "changed": [],
+        "invalid_entries": []
+      }
+    },
+    {
+      "name": "source_file_set_matches_freeze",
+      "passed": true,
+      "detail": {
+        "added": [],
+        "missing": []
+      }
+    },
+    {
+      "name": "config_frozen_hashes_match",
+      "passed": true,
+      "detail": {
+        "files_checked": 19,
+        "changed": [],
+        "invalid_entries": []
+      }
+    },
+    {
+      "name": "config_freeze_covers_projects_tools_and_constraints",
+      "passed": true,
+      "detail": {
+        "missing_required": []
+      }
+    },
+    {
+      "name": "project_references_td_project",
+      "passed": true,
+      "detail": {
+        "count": 104,
+        "missing_or_outside_native_root": []
+      }
+    },
+    {
+      "name": "project_references_syn_1",
+      "passed": true,
+      "detail": {
+        "count": 104,
+        "missing_or_outside_native_root": []
+      }
+    },
+    {
+      "name": "project_references_phy_1",
+      "passed": true,
+      "detail": {
+        "count": 104,
+        "missing_or_outside_native_root": []
+      }
+    },
+    {
+      "name": "actual_native_exit_syn_1",
+      "passed": true,
+      "detail": [
+        {
+          "nativeExit": 0,
+          "run": "syn_1",
+          "started": "2026-10-28T10:18:06.0368648+08:00",
+          "finished": "2026-10-28T10:21:49.6120207+08:00",
+          "errorInLog": false
+        }
+      ]
+    },
+    {
+      "name": "native_stage_time_order_syn_1",
+      "passed": true
+    },
+    {
+      "name": "actual_native_exit_phy_1",
+      "passed": true,
+      "detail": [
+        {
+          "nativeExit": 0,
+          "run": "phy_1",
+          "started": "2026-10-28T10:21:49.6605330+08:00",
+          "finished": "2026-10-28T10:33:14.7823607+08:00",
+          "errorInLog": false
+        }
+      ]
+    },
+    {
+      "name": "native_stage_time_order_phy_1",
+      "passed": true
+    },
+    {
+      "name": "native_background_exit",
+      "passed": true,
+      "detail": {
+        "sourceSnapshot": "BUILD_SOURCE_HASHES.json",
+        "stages": [
+          {
+            "nativeExit": 0,
+            "run": "syn_1",
+            "started": "2026-10-28T10:18:06.0368648+08:00",
+            "finished": "2026-10-28T10:21:49.6120207+08:00",
+            "errorInLog": false
+          },
+          {
+            "nativeExit": 0,
+            "run": "phy_1",
+            "started": "2026-10-28T10:21:49.6605330+08:00",
+            "finished": "2026-10-28T10:33:14.7823607+08:00",
+            "errorInLog": false
+          }
+        ],
+        "finished": "2026-10-28T10:33:14.7843612+08:00",
+        "resultRequiresIndependentTimingAndArtifactQualification": true,
+        "exit": 0
+      }
+    },
+    {
+      "name": "background_and_stage_records_agree",
+      "passed": true
+    },
+    {
+      "name": "synthesis_finished_before_physical_start",
+      "passed": true
+    },
+    {
+      "name": "freeze_predates_native_start_BUILD_SOURCE_HASHES.json",
+      "passed": true
+    },
+    {
+      "name": "freeze_predates_native_start_BUILD_CONFIG_HASHES.json",
+      "passed": true
+    },
+    {
+      "name": "constraint_provenance_predates_native_start",
+      "passed": true
+    },
+    {
+      "name": "native_console_has_no_errors_syn_1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "native_tool_version_syn_1",
+      "passed": true,
+      "detail": [
+        "6.2.168116"
+      ]
+    },
+    {
+      "name": "native_console_has_no_errors_phy_1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "native_tool_version_phy_1",
+      "passed": true,
+      "detail": [
+        "6.2.168116",
+        "6.2.168116"
+      ]
+    },
+    {
+      "name": "synthesis_command_completed_elaborate -top design_top_wrapper",
+      "passed": true
+    },
+    {
+      "name": "synthesis_command_completed_optimize_rtl",
+      "passed": true
+    },
+    {
+      "name": "synthesis_command_completed_optimize_gate",
+      "passed": true
+    },
+    {
+      "name": "synthesis_command_completed_export_db wb_ui_dsi_gate.db",
+      "passed": true,
+      "detail": {
+        "method": "complete_native_export_fresh_database_and_explicit_physical_import",
+        "accepted": true,
+        "original_explicit_export_finish_check_passed": false,
+        "original_missing_finish_check_name": "synthesis_command_completed_export_db wb_ui_dsi_gate.db",
+        "console_log_proof": {
+          "export_command": "export_db wb_ui_dsi_gate.db",
+          "missing_export_finish_line": true,
+          "exported_sections": [
+            "flow parameters",
+            "/",
+            "libs",
+            "entities",
+            "ports",
+            "pins",
+            "instances",
+            "nets",
+            "buses",
+            "models",
+            "packer",
+            "congestions",
+            "violations",
+            "ATMR Setting",
+            "timing constraints",
+            "IO constraints",
+            "Inst constraints",
+            "ChipWatcher"
+          ],
+          "next_native_command": "export_flow_status -s read_design -e opt_gate",
+          "physical_import_command": "import_db ../syn_1/wb_ui_dsi_gate.db",
+          "physical_import_explicit_finish": true,
+          "physical_import_success": true
+        },
+        "native_td_log_proof": {
+          "export_command": "export_db wb_ui_dsi_gate.db",
+          "missing_export_finish_line": true,
+          "exported_sections": [
+            "flow parameters",
+            "/",
+            "libs",
+            "entities",
+            "ports",
+            "pins",
+            "instances",
+            "nets",
+            "buses",
+            "models",
+            "packer",
+            "congestions",
+            "violations",
+            "ATMR Setting",
+            "timing constraints",
+            "IO constraints",
+            "Inst constraints",
+            "ChipWatcher"
+          ],
+          "next_native_command": "export_flow_status -s read_design -e opt_gate",
+          "physical_import_command": "import_db ../syn_1/wb_ui_dsi_gate.db",
+          "physical_import_explicit_finish": true,
+          "physical_import_success": true
+        },
+        "native_synthesis_log": "td_project/wb_ui_dsi_Runs/syn_1/td_20261028_101806.log",
+        "native_physical_log": "td_project/wb_ui_dsi_Runs/phy_1/td_20261028_102149.log",
+        "database_relative_path": "td_project/wb_ui_dsi_Runs/syn_1/wb_ui_dsi_gate.db",
+        "database_artifact": {
+          "bytes": 17765854,
+          "sha256": "74498c67fb3cc9c8b0ae0bc10e2c3cf1e0ba8ee0f49291975323803fdec55e35",
+          "modified_utc": "2026-10-28T02:21:49.322063+00:00"
+        },
+        "synthesis_stage_window": [
+          "2026-10-28T10:18:06.0368648+08:00",
+          "2026-10-28T10:21:49.6120207+08:00"
+        ],
+        "physical_stage_window": [
+          "2026-10-28T10:21:49.6605330+08:00",
+          "2026-10-28T10:33:14.7823607+08:00"
+        ],
+        "database_fresh_in_synthesis": true,
+        "native_synthesis_and_physical_exit_zero": true,
+        "synthesis_precedes_physical": true
+      }
+    },
+    {
+      "name": "physical_route_command_completed",
+      "passed": true
+    },
+    {
+      "name": "final_timing_confidence_routed",
+      "passed": true
+    },
+    {
+      "name": "final_timing_expected_top_and_device",
+      "passed": true
+    },
+    {
+      "name": "final_nonnegative_SWNS",
+      "passed": true,
+      "detail": [
+        "0.067"
+      ]
+    },
+    {
+      "name": "final_nonnegative_HWNS",
+      "passed": true,
+      "detail": [
+        "0.020"
+      ]
+    },
+    {
+      "name": "final_nonnegative_Period Check WNS",
+      "passed": true,
+      "detail": [
+        "4.700"
+      ]
+    },
+    {
+      "name": "gray_cdc_max_delay_applies_to_all_16_paths",
+      "passed": true,
+      "detail": [
+        [
+          "16",
+          "16",
+          "0",
+          "0"
+        ]
+      ]
+    },
+    {
+      "name": "gray_cdc_exception_report_is_routed",
+      "passed": true
+    },
+    {
+      "name": "native_final_timing_gate_matches_report",
+      "passed": true,
+      "detail": [
+        [
+          "0.067",
+          "0.020"
+        ]
+      ]
+    },
+    {
+      "name": "final_route_conflict_counters_zero",
+      "passed": true,
+      "detail": {
+        "over_cnt": 0,
+        "over": 0,
+        "worst": 0,
+        "crit": 0
+      }
+    },
+    {
+      "name": "final_route_open_net_zero",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "route_status_command_completed",
+      "passed": true
+    },
+    {
+      "name": "route_drc_command_completed",
+      "passed": true
+    },
+    {
+      "name": "route_status_reports_positive_routed_net_count",
+      "passed": true,
+      "detail": [
+        "36615"
+      ]
+    },
+    {
+      "name": "route_status_independently_reports_no_open_nets",
+      "passed": true,
+      "detail": [
+        "0"
+      ]
+    },
+    {
+      "name": "route_status_file_matches_console",
+      "passed": true
+    },
+    {
+      "name": "route_drc_all_native_checks_completed",
+      "passed": true,
+      "detail": {
+        "Lut Bridge Check": true,
+        "Physical Net Status Check": true,
+        "Clock Net Status Check": true,
+        "Abnormal Timing Path check": true
+      }
+    },
+    {
+      "name": "route_drc_reports_no_multidrive",
+      "passed": true
+    },
+    {
+      "name": "route_drc_reports_no_abnormal_timing_path",
+      "passed": true
+    },
+    {
+      "name": "route_drc_has_no_unreviewed_violation_messages",
+      "passed": true,
+      "detail": {
+        "all_messages": [
+          "PHY-5079 CRITICAL-WARNING: Marked 2 clock net(s) utilize the local routing resources. Please check log message and the sinks of clock nets.\r",
+          "PHY-5088 WARNING: Clock_Analyzer: Detected 1 buffer(s) clkin net because they drive non-clock sinks. Run \"analyze_clock -detail\" for more infomation.\r",
+          "PHY-5088 WARNING: Clock_Analyzer: Detected 1 buffer(s) clkout net because they drive non-clock sinks. Run \"analyze_clock -detail\" for more infomation.\r",
+          "PHY-5088 WARNING: Clock_Analyzer: 2 clock-net(s) because they drive other clock net, may cause clock skew. Run \"analyze_clock -detail\" for more infomation.\r"
+        ],
+        "unreviewed": []
+      }
+    },
+    {
+      "name": "resource_within_capacity_lut6",
+      "passed": true,
+      "detail": {
+        "used": 19615,
+        "total": 21216,
+        "reported_percent": 92.45
+      }
+    },
+    {
+      "name": "resource_within_capacity_slice",
+      "passed": true,
+      "detail": {
+        "used": 20413,
+        "total": 21216,
+        "reported_percent": 96.22
+      }
+    },
+    {
+      "name": "resource_within_capacity_slice reg",
+      "passed": true,
+      "detail": {
+        "used": 18154,
+        "total": 42432,
+        "reported_percent": 42.78
+      }
+    },
+    {
+      "name": "resource_within_capacity_eram",
+      "passed": true,
+      "detail": {
+        "used": 93,
+        "total": 108,
+        "reported_percent": 86.11
+      }
+    },
+    {
+      "name": "resource_within_capacity_dsp",
+      "passed": true,
+      "detail": {
+        "used": 34,
+        "total": 40,
+        "reported_percent": 85.0
+      }
+    },
+    {
+      "name": "resource_within_capacity_ddr_byte",
+      "passed": true,
+      "detail": {
+        "used": 6,
+        "total": 12,
+        "reported_percent": 50.0
+      }
+    },
+    {
+      "name": "resource_within_capacity_mipi_tx",
+      "passed": true,
+      "detail": {
+        "used": 1,
+        "total": 2,
+        "reported_percent": 50.0
+      }
+    },
+    {
+      "name": "resource_within_capacity_mipi_rx",
+      "passed": true,
+      "detail": {
+        "used": 1,
+        "total": 2,
+        "reported_percent": 50.0
+      }
+    },
+    {
+      "name": "resource_within_capacity_pad",
+      "passed": true,
+      "detail": {
+        "used": 13,
+        "total": 160,
+        "reported_percent": 8.12
+      }
+    },
+    {
+      "name": "resource_within_capacity_pll",
+      "passed": true,
+      "detail": {
+        "used": 3,
+        "total": 6,
+        "reported_percent": 50.0
+      }
+    },
+    {
+      "name": "resource_within_capacity_gclk",
+      "passed": true,
+      "detail": {
+        "used": 10,
+        "total": 32,
+        "reported_percent": 31.25
+      }
+    },
+    {
+      "name": "resource_within_capacity_lclk",
+      "passed": true,
+      "detail": {
+        "used": 0,
+        "total": 12,
+        "reported_percent": 0.0
+      }
+    },
+    {
+      "name": "resource_within_capacity_sclk",
+      "passed": true,
+      "detail": {
+        "used": 24,
+        "total": 48,
+        "reported_percent": 50.0
+      }
+    },
+    {
+      "name": "resource_within_capacity_mlclk",
+      "passed": true,
+      "detail": {
+        "used": 2,
+        "total": 6,
+        "reported_percent": 33.33
+      }
+    },
+    {
+      "name": "resource_within_capacity_ioclk",
+      "passed": true,
+      "detail": {
+        "used": 4,
+        "total": 18,
+        "reported_percent": 22.22
+      }
+    },
+    {
+      "name": "fresh_this_native_stage_final_timing",
+      "passed": true,
+      "detail": {
+        "stage": "phy_1",
+        "stage_epoch_seconds": [
+          1793154109.660533,
+          1793154794.78236
+        ],
+        "file_mtime_epoch_seconds": 1793154777.39347
+      }
+    },
+    {
+      "name": "fresh_this_native_stage_final_area",
+      "passed": true,
+      "detail": {
+        "stage": "phy_1",
+        "stage_epoch_seconds": [
+          1793154109.660533,
+          1793154794.78236
+        ],
+        "file_mtime_epoch_seconds": 1793154770.556441
+      }
+    },
+    {
+      "name": "fresh_this_native_stage_route_status",
+      "passed": true,
+      "detail": {
+        "stage": "phy_1",
+        "stage_epoch_seconds": [
+          1793154109.660533,
+          1793154794.78236
+        ],
+        "file_mtime_epoch_seconds": 1793154779.7650423
+      }
+    },
+    {
+      "name": "fresh_this_native_stage_physical_console",
+      "passed": true,
+      "detail": {
+        "stage": "phy_1",
+        "stage_epoch_seconds": [
+          1793154109.660533,
+          1793154794.78236
+        ],
+        "file_mtime_epoch_seconds": 1793154794.639869
+      }
+    },
+    {
+      "name": "fresh_this_native_stage_gray_cdc_exception_report",
+      "passed": true,
+      "detail": {
+        "stage": "phy_1",
+        "stage_epoch_seconds": [
+          1793154109.660533,
+          1793154794.78236
+        ],
+        "file_mtime_epoch_seconds": 1793154777.4004729
+      }
+    },
+    {
+      "name": "fresh_this_native_stage_synthesis_console",
+      "passed": true,
+      "detail": {
+        "stage": "syn_1",
+        "stage_epoch_seconds": [
+          1793153886.036864,
+          1793154109.61202
+        ],
+        "file_mtime_epoch_seconds": 1793154109.4676313
+      }
+    },
+    {
+      "name": "fresh_this_native_stage_regular_bit",
+      "passed": true,
+      "detail": {
+        "stage": "phy_1",
+        "stage_epoch_seconds": [
+          1793154109.660533,
+          1793154794.78236
+        ],
+        "file_mtime_epoch_seconds": 1793154794.5973408
+      }
+    },
+    {
+      "name": "bit_file_complete_size_regular",
+      "passed": true,
+      "detail": 1789539
+    },
+    {
+      "name": "bit_header_identity_regular",
+      "passed": true,
+      "detail": {
+        "Version": "6.2.168116",
+        "Design name": "design_top_wrapper",
+        "Architecture": "ph1_35p",
+        "Package": "PH1P35MDG324",
+        "Date": "2026/10/28 10:33",
+        "Global CRC": "11111111011101000011010010111110",
+        "Transfer CRC": "11010011100100101110100011010101",
+        "File Format": "Bitstream",
+        "SPI Feature": "1101110110111011011001100010001011111111111111111111111110000010",
+        "USER CODE": "00000000111000010000000000000000"
+      }
+    },
+    {
+      "name": "bit_header_global_and_transfer_crc_present_regular",
+      "passed": true
+    },
+    {
+      "name": "bit_header_compression_mode_regular",
+      "passed": true
+    },
+    {
+      "name": "bit_payload_sync_prefix_regular",
+      "passed": true
+    },
+    {
+      "name": "bit_header_date_in_native_stage_regular",
+      "passed": true
+    },
+    {
+      "name": "fresh_this_native_stage_compressed_bit",
+      "passed": true,
+      "detail": {
+        "stage": "phy_1",
+        "stage_epoch_seconds": [
+          1793154109.660533,
+          1793154794.78236
+        ],
+        "file_mtime_epoch_seconds": 1793154794.3349655
+      }
+    },
+    {
+      "name": "bit_file_complete_size_compressed",
+      "passed": true,
+      "detail": 1579633
+    },
+    {
+      "name": "bit_header_identity_compressed",
+      "passed": true,
+      "detail": {
+        "Version": "6.2.168116",
+        "Design name": "design_top_wrapper",
+        "Architecture": "ph1_35p",
+        "Package": "PH1P35MDG324",
+        "Date": "2026/10/28 10:33",
+        "Global CRC": "11111111011101000011010010111110",
+        "Transfer CRC": "01100010000011101101111011110100",
+        "Compress": "dispersed",
+        "File Format": "Bitstream",
+        "SPI Feature": "1101110110111011011001100010001011111111111111111111111110000010",
+        "USER CODE": "00000000111000010000000000000000"
+      }
+    },
+    {
+      "name": "bit_header_global_and_transfer_crc_present_compressed",
+      "passed": true
+    },
+    {
+      "name": "bit_header_compression_mode_compressed",
+      "passed": true,
+      "detail": "dispersed"
+    },
+    {
+      "name": "bit_payload_sync_prefix_compressed",
+      "passed": true
+    },
+    {
+      "name": "bit_header_date_in_native_stage_compressed",
+      "passed": true
+    },
+    {
+      "name": "both_bitstreams_have_same_design_crc",
+      "passed": true
+    },
+    {
+      "name": "regular_and_compressed_artifacts_are_distinct",
+      "passed": true
+    },
+    {
+      "name": "native_log_records_both_generated_bitstreams",
+      "passed": true,
+      "detail": [
+        "wb_ui_dsi.bit",
+        "wb_ui_dsi_compress.bit",
+        "wb_ui_dsi.bit"
+      ]
+    },
+    {
+      "name": "native_log_records_both_bitgen_completions",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "bitgen_follows_final_timing_gate",
+      "passed": true
+    }
+  ],
+  "observations": {
+    "constraint_addition": {
+      "provenance": "CONSTRAINT_ADDITION_PROVENANCE.json",
+      "modified_sdc": "td_project/wb_ui_dsi.sdc",
+      "baseline_sdc_copy": "build_evidence/constraint_baseline/wb_ui_dsi.sdc",
+      "allowed_commands": [
+        "set_max_delay -from [get_regs {u_video_in/camera_sequence_gray[*]}] -to [get_regs {u_video_in/sequence_gray_sync1[*]}] -datapath_only 7.500",
+        "set_false_path -hold -from [get_regs {u_video_in/camera_sequence_gray[*]}] -to [get_regs {u_video_in/sequence_gray_sync1[*]}]"
+      ],
+      "original_sdc_sha256": "fa863545159c6c8ccfe4a808548a18e00b65a19cfd65b0f9930b010f96ce2236",
+      "added_block_sha256": "28a4a5b9dee1d44209b738a8149cfa7fa4e94133df9634d68d5521cff2d59499",
+      "unchanged_constraint_count": 5
+    },
+    "synthesis_export_completion": {
+      "method": "complete_native_export_fresh_database_and_explicit_physical_import",
+      "accepted": true,
+      "original_explicit_export_finish_check_passed": false,
+      "original_missing_finish_check_name": "synthesis_command_completed_export_db wb_ui_dsi_gate.db",
+      "console_log_proof": {
+        "export_command": "export_db wb_ui_dsi_gate.db",
+        "missing_export_finish_line": true,
+        "exported_sections": [
+          "flow parameters",
+          "/",
+          "libs",
+          "entities",
+          "ports",
+          "pins",
+          "instances",
+          "nets",
+          "buses",
+          "models",
+          "packer",
+          "congestions",
+          "violations",
+          "ATMR Setting",
+          "timing constraints",
+          "IO constraints",
+          "Inst constraints",
+          "ChipWatcher"
+        ],
+        "next_native_command": "export_flow_status -s read_design -e opt_gate",
+        "physical_import_command": "import_db ../syn_1/wb_ui_dsi_gate.db",
+        "physical_import_explicit_finish": true,
+        "physical_import_success": true
+      },
+      "native_td_log_proof": {
+        "export_command": "export_db wb_ui_dsi_gate.db",
+        "missing_export_finish_line": true,
+        "exported_sections": [
+          "flow parameters",
+          "/",
+          "libs",
+          "entities",
+          "ports",
+          "pins",
+          "instances",
+          "nets",
+          "buses",
+          "models",
+          "packer",
+          "congestions",
+          "violations",
+          "ATMR Setting",
+          "timing constraints",
+          "IO constraints",
+          "Inst constraints",
+          "ChipWatcher"
+        ],
+        "next_native_command": "export_flow_status -s read_design -e opt_gate",
+        "physical_import_command": "import_db ../syn_1/wb_ui_dsi_gate.db",
+        "physical_import_explicit_finish": true,
+        "physical_import_success": true
+      },
+      "native_synthesis_log": "td_project/wb_ui_dsi_Runs/syn_1/td_20261028_101806.log",
+      "native_physical_log": "td_project/wb_ui_dsi_Runs/phy_1/td_20261028_102149.log",
+      "database_relative_path": "td_project/wb_ui_dsi_Runs/syn_1/wb_ui_dsi_gate.db",
+      "database_artifact": {
+        "bytes": 17765854,
+        "sha256": "74498c67fb3cc9c8b0ae0bc10e2c3cf1e0ba8ee0f49291975323803fdec55e35",
+        "modified_utc": "2026-10-28T02:21:49.322063+00:00"
+      },
+      "synthesis_stage_window": [
+        "2026-10-28T10:18:06.0368648+08:00",
+        "2026-10-28T10:21:49.6120207+08:00"
+      ],
+      "physical_stage_window": [
+        "2026-10-28T10:21:49.6605330+08:00",
+        "2026-10-28T10:33:14.7823607+08:00"
+      ],
+      "database_fresh_in_synthesis": true,
+      "native_synthesis_and_physical_exit_zero": true,
+      "synthesis_precedes_physical": true
+    },
+    "final_slacks_ns": {
+      "SWNS": 0.067,
+      "HWNS": 0.02,
+      "Period Check WNS": 4.7
+    },
+    "sta_coverage_percent": 97.59,
+    "last_route_counters": {
+      "over_cnt": 0,
+      "over": 0,
+      "worst": 0,
+      "crit": 0
+    },
+    "route_status_completion_evidence": "next native command started",
+    "route_drc": {
+      "evidence_source": "completed native console command section",
+      "clock_warnings": [
+        "PHY-5079 CRITICAL-WARNING: Marked 2 clock net(s) utilize the local routing resources. Please check log message and the sinks of clock nets.\r",
+        "PHY-5088 WARNING: Clock_Analyzer: Detected 1 buffer(s) clkin net because they drive non-clock sinks. Run \"analyze_clock -detail\" for more infomation.\r",
+        "PHY-5088 WARNING: Clock_Analyzer: Detected 1 buffer(s) clkout net because they drive non-clock sinks. Run \"analyze_clock -detail\" for more infomation.\r",
+        "PHY-5088 WARNING: Clock_Analyzer: 2 clock-net(s) because they drive other clock net, may cause clock skew. Run \"analyze_clock -detail\" for more infomation.\r"
+      ],
+      "raw_report_file_exists": false
+    },
+    "final_resources": {
+      "lut6": {
+        "used": 19615,
+        "total": 21216,
+        "reported_percent": 92.45
+      },
+      "slice": {
+        "used": 20413,
+        "total": 21216,
+        "reported_percent": 96.22
+      },
+      "slice reg": {
+        "used": 18154,
+        "total": 42432,
+        "reported_percent": 42.78
+      },
+      "eram": {
+        "used": 93,
+        "total": 108,
+        "reported_percent": 86.11
+      },
+      "dsp": {
+        "used": 34,
+        "total": 40,
+        "reported_percent": 85.0
+      },
+      "ddr_byte": {
+        "used": 6,
+        "total": 12,
+        "reported_percent": 50.0
+      },
+      "mipi_tx": {
+        "used": 1,
+        "total": 2,
+        "reported_percent": 50.0
+      },
+      "mipi_rx": {
+        "used": 1,
+        "total": 2,
+        "reported_percent": 50.0
+      },
+      "pad": {
+        "used": 13,
+        "total": 160,
+        "reported_percent": 8.12
+      },
+      "pll": {
+        "used": 3,
+        "total": 6,
+        "reported_percent": 50.0
+      },
+      "gclk": {
+        "used": 10,
+        "total": 32,
+        "reported_percent": 31.25
+      },
+      "lclk": {
+        "used": 0,
+        "total": 12,
+        "reported_percent": 0.0
+      },
+      "sclk": {
+        "used": 24,
+        "total": 48,
+        "reported_percent": 50.0
+      },
+      "mlclk": {
+        "used": 2,
+        "total": 6,
+        "reported_percent": 33.33
+      },
+      "ioclk": {
+        "used": 4,
+        "total": 18,
+        "reported_percent": 22.22
+      }
+    },
+    "bitstreams": {
+      "regular": {
+        "path": "td_project/wb_ui_dsi_Runs/phy_1/wb_ui_dsi.bit",
+        "sha256": "d72afd43071fe916a3b12aa861c2985b18433887f50e0f16d8d8b94d680dd911",
+        "bytes": 1789539,
+        "header_fields": {
+          "Version": "6.2.168116",
+          "Design name": "design_top_wrapper",
+          "Architecture": "ph1_35p",
+          "Package": "PH1P35MDG324",
+          "Date": "2026/10/28 10:33",
+          "Global CRC": "11111111011101000011010010111110",
+          "Transfer CRC": "11010011100100101110100011010101",
+          "File Format": "Bitstream",
+          "SPI Feature": "1101110110111011011001100010001011111111111111111111111110000010",
+          "USER CODE": "00000000111000010000000000000000"
+        }
+      },
+      "compressed": {
+        "path": "td_project/wb_ui_dsi_Runs/phy_1/wb_ui_dsi_compress.bit",
+        "sha256": "532b15b83b01d438b88df1a9e8954af274b00bd9412a40a8ba5880325c07ef71",
+        "bytes": 1579633,
+        "header_fields": {
+          "Version": "6.2.168116",
+          "Design name": "design_top_wrapper",
+          "Architecture": "ph1_35p",
+          "Package": "PH1P35MDG324",
+          "Date": "2026/10/28 10:33",
+          "Global CRC": "11111111011101000011010010111110",
+          "Transfer CRC": "01100010000011101101111011110100",
+          "Compress": "dispersed",
+          "File Format": "Bitstream",
+          "SPI Feature": "1101110110111011011001100010001011111111111111111111111110000010",
+          "USER CODE": "00000000111000010000000000000000"
+        }
+      }
+    }
+  },
+  "artifact_sha256": {
+    "CONSTRAINT_ADDITION_PROVENANCE.json": {
+      "bytes": 2564,
+      "sha256": "f4a6ed4c8bdabdf32ec3a55f5c83f8a3959f476bf998b8bb9b0e308d7e444af9",
+      "modified_utc": "2026-10-28T02:13:32.700426+00:00"
+    },
+    "build_evidence/constraint_baseline/wb_ui_dsi.sdc": {
+      "bytes": 5589,
+      "sha256": "fa863545159c6c8ccfe4a808548a18e00b65a19cfd65b0f9930b010f96ce2236",
+      "modified_utc": "2026-10-27T10:06:49.099565+00:00"
+    },
+    "td_project/wb_ui_dsi.sdc": {
+      "bytes": 6164,
+      "sha256": "e1c8519a48c5a367321f22335550bf3667e2ba9de042ce87db3ea4469c7966a8",
+      "modified_utc": "2026-10-27T10:06:48.342597+00:00"
+    },
+    "user_source/hdl_source/video_in.v": {
+      "bytes": 6481,
+      "sha256": "a981d552b66d73d3b4538a7be0375336f66c274542842b8133455853728ca07b",
+      "modified_utc": "2026-10-26T11:42:48.819880+00:00"
+    },
+    "BUILD_SOURCE_HASHES.json": {
+      "bytes": 33520,
+      "sha256": "783d3b14d642271c8676f18019af3bb388e02dbc6ffba93950adbc7861667e12",
+      "modified_utc": "2026-10-28T02:12:24.198113+00:00"
+    },
+    "BUILD_CONFIG_HASHES.json": {
+      "bytes": 2104,
+      "sha256": "5682099e3c29618f21766392b56b3c3f91c1b124942ab388d2e80b12cc1e784d",
+      "modified_utc": "2026-10-28T02:12:24.247111+00:00"
+    },
+    "td_project/wb_ui_dsi.al": {
+      "bytes": 42880,
+      "sha256": "ae241c0db0c89f855ad8cbc150eb9e3b5181748ad9a61bca747062457df9e397",
+      "modified_utc": "2026-10-26T11:42:48.823975+00:00"
+    },
+    "td_project/wb_ui_dsi_Runs/syn_1/wb_ui_dsi.prj": {
+      "bytes": 40573,
+      "sha256": "a90bc61af6c787ade958ef1a31dc0a375eb8c2f4c10fe1ef5abcbd513d450d4f",
+      "modified_utc": "2026-10-26T11:42:48.823975+00:00"
+    },
+    "td_project/wb_ui_dsi_Runs/phy_1/wb_ui_dsi.prj": {
+      "bytes": 40880,
+      "sha256": "227d0d492120fcd621ee00b2553bc8c671241e57573d77344c2c8079100a80df",
+      "modified_utc": "2026-10-26T11:42:48.824976+00:00"
+    },
+    "BUILD_STAGE_EXITS.json": {
+      "bytes": 438,
+      "sha256": "d1e3e2e30d8c87702c55de7464272e20a6ff7d4edfd332bd5e592286b41bba13",
+      "modified_utc": "2026-10-28T02:33:14.784361+00:00"
+    },
+    "BACKGROUND_EXIT.json": {
+      "bytes": 879,
+      "sha256": "4e303a18b09433df29a0448470abda751198c07a150f35c3a14d3b9fdd426ca6",
+      "modified_utc": "2026-10-28T02:33:14.786361+00:00"
+    },
+    "td_project/wb_ui_dsi_Runs/syn_1/build_console.txt": {
+      "bytes": 368958,
+      "sha256": "fbceabfd2114051fdabc0ce7d1e0b256e2a523e09f85509c4b3200c41fa23ad3",
+      "modified_utc": "2026-10-28T02:21:49.467631+00:00"
+    },
+    "td_project/wb_ui_dsi_Runs/phy_1/build_console.txt": {
+      "bytes": 542030,
+      "sha256": "eb24e0d46e588f5f5623d5ef653fa21e0381dc7d8b169696bbaa7020e9891468",
+      "modified_utc": "2026-10-28T02:33:14.639869+00:00"
+    },
+    "td_project/wb_ui_dsi_Runs/syn_1/td_20261028_101806.log": {
+      "bytes": 184478,
+      "sha256": "5d414894b4a05f3da992dab1f87ccf0aa7103bda2c938331d4ce36997214bb8c",
+      "modified_utc": "2026-10-28T02:21:49.467631+00:00"
+    },
+    "td_project/wb_ui_dsi_Runs/phy_1/td_20261028_102149.log": {
+      "bytes": 270929,
+      "sha256": "2b804b699dcd85bb6f1201a1b476e7d7202545cc8858de72d38ac292996c3620",
+      "modified_utc": "2026-10-28T02:33:14.639869+00:00"
+    },
+    "td_project/wb_ui_dsi_Runs/syn_1/wb_ui_dsi_gate.db": {
+      "bytes": 17765854,
+      "sha256": "74498c67fb3cc9c8b0ae0bc10e2c3cf1e0ba8ee0f49291975323803fdec55e35",
+      "modified_utc": "2026-10-28T02:21:49.322063+00:00"
+    },
+    "td_project/wb_ui_dsi_Runs/phy_1/wb_ui_dsi_pr.timing": {
+      "bytes": 7455875,
+      "sha256": "789571534e1eaff132ce9020e11e5eb4530d19200c9ce8d30c95895314740384",
+      "modified_utc": "2026-10-28T02:32:57.393470+00:00"
+    },
+    "td_project/wb_ui_dsi_Runs/phy_1/wb_ui_dsi_exception.timing": {
+      "bytes": 285719,
+      "sha256": "9ea1e28af766752ba54473ea46bfe70c7e875a41ff61a0770d00237017e0c5e3",
+      "modified_utc": "2026-10-28T02:32:57.400473+00:00"
+    },
+    "td_project/wb_ui_dsi_Runs/phy_1/wb_ui_dsi_route_status.rpt": {
+      "bytes": 307,
+      "sha256": "756779f59fc40623249d8247fd004f50aa1ab6ddd9b8a37ea58139809f2ab057",
+      "modified_utc": "2026-10-28T02:32:59.765042+00:00"
+    },
+    "td_project/wb_ui_dsi_Runs/phy_1/wb_ui_dsi_phy.area": {
+      "bytes": 64481,
+      "sha256": "2ee7117b3312cd2ff13c7a931c977df961a85b355ddf903b825fa410044dece0",
+      "modified_utc": "2026-10-28T02:32:50.556441+00:00"
+    },
+    "td_project/wb_ui_dsi_Runs/phy_1/wb_ui_dsi.bit": {
+      "bytes": 1789539,
+      "sha256": "d72afd43071fe916a3b12aa861c2985b18433887f50e0f16d8d8b94d680dd911",
+      "modified_utc": "2026-10-28T02:33:14.597341+00:00"
+    },
+    "td_project/wb_ui_dsi_Runs/phy_1/wb_ui_dsi_compress.bit": {
+      "bytes": 1579633,
+      "sha256": "532b15b83b01d438b88df1a9e8954af274b00bd9412a40a8ba5880325c07ef71",
+      "modified_utc": "2026-10-28T02:33:14.334965+00:00"
+    }
+  },
+  "limitations": [
+    "No hardware/board test is inferred from native-tool qualification.",
+    "Bitstream CRC fields are recorded; CRC algorithms are not independently recalculated.",
+    "Legal local-clock DRC warnings are retained explicitly in observations.",
+    "If a single gate DB export finish line is absent, observations retain exact alternative native export/database/import proof."
+  ]
+}
