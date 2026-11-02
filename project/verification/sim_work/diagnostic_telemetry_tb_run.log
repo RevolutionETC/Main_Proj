@@ -1,2 +1,0 @@
-PASS diagnostic telemetry: asynchronous coherent 33-bit snapshots, peak/reset/invalid age, all 65536 modulo sequence deltas and saturation, all 256 underflow values, 32-bit counter wrap; 26559 display checks
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\diagnostic_telemetry_tb.sv:74: $finish called at 509125624 (1ps)

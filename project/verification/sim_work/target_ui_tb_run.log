@@ -1,2 +1,0 @@
-PASS recognition switch only in function library: AWB former button inactive for OFF and ON, exact hitbox, one toggle per hold, preview/manual persistence, coherent 24-bit asynchronous mailbox
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\red_target_tb.sv:200: $finish called at 52680000 (1ps)

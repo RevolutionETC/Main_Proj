@@ -1,2 +1,0 @@
-PASS information bar: 39200 exact output pixels across RUN/NO TARGET/LIMIT/WAIT/OFF, display FPS/detection FPS/0.01ms latency strings, preview/auto/tint pages, frame-latched metadata under mid-frame edits, status inside footer and three-stage ISP UI timing
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\integrated_hud_tb.sv:57: $finish called at 30810700000 (1ps)

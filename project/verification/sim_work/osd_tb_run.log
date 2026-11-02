@@ -1,2 +1,0 @@
-PASS OSD: 4934690 cycles, 2546688 active pixels, three parameter modes, logo=22680 text=2742 unchanged=2521266; all BCD carries and wrap; reset recovery.
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\osd_tb.sv:166: $finish called at 49346987000 (1ps)

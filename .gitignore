@@ -1,29 +1,9 @@
-# Python and editor temporary files
-**/__pycache__/
-*.py[cod]
-.DS_Store
-Thumbs.db
+td_project/*_Runs/
+td_project/log/
+td_project/*.log*
+td_project/*.rpt
+td_project/*.db
 *.tmp
 *.bak
-*.swp
-# Regenerable simulation work; delivered build_evidence stays tracked
-**/verification/sim_work/
-**/.Xil/
-**/xsim.dir/
-# TD run products stay local; source .prj/settings.cfg/build.tcl remain tracked.
-project/td_project/*_Runs/*/.*.f
-project/td_project/*_Runs/*/*.db
-project/td_project/*_Runs/*/*.area
-project/td_project/*_Runs/*/*.timing
-project/td_project/*_Runs/*/*.ts
-project/td_project/*_Runs/*/*.qor
-project/td_project/*_Runs/*/*.status
-project/td_project/*_Runs/*/*.bit
-project/td_project/*_Runs/*/*.bid
-project/td_project/*_Runs/*/*.rpt
-project/td_project/*_Runs/*/*.log
-project/td_project/*_Runs/*/*.logw
-project/td_project/*_Runs/*/build_console.txt
-project/td_project/*_Runs/*/*_console.txt
-project/td_project/*_Runs/*/*_runtime.sdc
-project/td_project/*_Runs/*/*_clock_utilization.txt
+.DS_Store
+Thumbs.db

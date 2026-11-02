@@ -1,2 +1,0 @@
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\user_source\hdl_source\isp\demosaic_4x_2_0\raw_matrix_3x3_buffer.v:136: warning: Port 13 (O_raw_tready) of mipi_to_raw_converter expects 1 bits, got 32.
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\user_source\hdl_source\isp\demosaic_4x_2_0\raw_matrix_3x3_buffer.v:136:        : Pruning (signed) 31 high bits of the expression.

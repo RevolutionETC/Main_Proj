@@ -1,2 +1,0 @@
-PASS frame store: asynchronous SOF+first pixel, byte order, incomplete/RX-error rejection, MC drain, exclusive front/latest ownership, overflow/drop/recovery; 5888 writes
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\frame_store_tb.sv:50: $finish called at 112740000 (1ps)

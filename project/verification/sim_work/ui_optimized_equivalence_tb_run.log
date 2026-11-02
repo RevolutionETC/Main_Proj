@@ -1,3 +1,0 @@
-WARNING: C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\user_source\hdl_source\ui\wb_ui_font.v:4: $readmemh(../qualified_ui_assets/wb_ui_font.hex): Not enough words in the file for the requested range [0:5823].
-PASS UI full-output equivalence: 2457600 pixels and 2464820 cycles across preview/HUD, information, full colour-shift grid and histogram pages; all pixels, sync/tag/histogram control and frame atomicity identical to frozen INFO_SWIPE baseline
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\ui_optimized_equivalence_tb.sv:42: $finish called at 24648240000 (1ps)

@@ -1,2 +1,0 @@
-PASS AWB complete beat/line count, receiver verdict, minimum sample proportion, dark/clipped rejection, luminance-jump hold, maximum Q10 step8 and stable-frame recovery
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\awb_guard_tb.sv:29: $finish called at 33030000 (1ps)

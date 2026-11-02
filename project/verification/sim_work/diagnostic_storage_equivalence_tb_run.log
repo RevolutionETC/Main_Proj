@@ -1,2 +1,0 @@
-PASS diagnostic metadata writer: all 65536 registered Gray states and bounded asynchronous decode, sequence wrap and first-pixel/slot pairing, original/new every-cycle address/control/payload equivalence, SOF+first pixel, MC drain, exclusive ownership and drop/overflow recovery; 5888 writes
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\diagnostic_storage_equivalence_tb.sv:98: $finish called at 1030650000 (1ps)

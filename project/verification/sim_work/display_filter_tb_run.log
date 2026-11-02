@@ -1,2 +1,0 @@
-PASS display filters: 3072 output pixels, 3072 centered windows, exact all eight modes including grayscale/cartoon/negative, borders and timing
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\display_filter_tb.sv:77: $finish called at 74080000 (1ps)

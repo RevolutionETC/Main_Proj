@@ -1,2 +1,0 @@
-PASS exact name-case-only painter resource optimization: 9216 exhaustive math/character offsets, 661519 streamed pixels, 669827 cycle-matched old/new status/ownership/output checks including native raster, overlap/offscreen snapshots, commit/LIMIT/stale/disable
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\target_mask_opt27_tb.sv:63: $finish called at 6698270000 (1ps)

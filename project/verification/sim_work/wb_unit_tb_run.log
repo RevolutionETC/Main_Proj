@@ -1,2 +1,0 @@
-PASS WB all 76 Kelvin entries in preset1 and manual2, auto0 convergence, rounding/clipping/four lanes, first-pixel SOF, frame-atomic config and dark-frame hold; 112340 pixels
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\core_tb.sv:86: $finish called at 620240000 (1ps)

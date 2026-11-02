@@ -1,6 +1,0 @@
-{
-  "baseline_archive": "lab_wb_stable_ui_DSI_SC500_7inch.zip",
-  "baseline_prefix": "lab_wb_stable_ui_DSI_SC500_7inch/",
-  "baseline_sha256": "acf723ededa18929846672f736780879dc4402e9b554710b26a048ee746cd83a",
-  "scope": "Fix all-frame rejection caused by alternating CSI valid; explicit payload end event and real decoder regression."
-}

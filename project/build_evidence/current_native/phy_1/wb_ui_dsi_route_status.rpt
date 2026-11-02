@@ -1,9 +1,0 @@
-Design Route Status
-
-#Total Routed Net                       36615
-  #Gnd Net                                467
-  #Local Net                             3809
-    #Net Drivers Same Slice               478
-    #Net Drivers Same PLB Slice          3331
-  #Other Net                            32339
-

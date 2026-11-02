@@ -1,2 +1,0 @@
-PASS filter/recognition independence: 8 continuous RGB frames, cycle-exact classifier/tracker decisions against unfiltered reference, 15 actual coloured box probes across all five display choices
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\pipeline_independence_tb.sv:48: $finish called at 6992360000 (1ps)

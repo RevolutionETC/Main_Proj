@@ -1,2 +1,0 @@
-PASS existing-bar exact equivalence: 1187008 compared top/bottom pixels across pages0..13 and both hidden/offline preview states, all status/count/FPS/DET/LAT/filter/WB/gain pixels unchanged; only intentional gesture-hint text excluded
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\info_bars_equivalence_tb.sv:66: $finish called at 12375570000 (1ps)

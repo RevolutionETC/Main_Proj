@@ -1,2 +1,0 @@
-PASS integrated filters + recognition: 35 continuous 512x320 frames, original/pixel/edge/retro/enhance: single R/B/G, all RB/RG/BG pairs and eight RGB targets; every confirmed frame has actual matching box pixels and color ink, no missing-color suppression or NO TARGET, all nine shape/color types and moderate blue/green saturation
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\integrated_colors_tb.sv:78: $finish called at 79535450000 (1ps)

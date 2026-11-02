@@ -1,2 +1,0 @@
-PASS UI three-mode WB and four environment presets; all 76 manual K steps retained across every preset and AWB; exact WB hitboxes, left-swipe release opening, inactive long press, all eight display choices, shared gain and fault cancellation
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\ui_test.sv:87: $finish called at 801490000 (1ps)

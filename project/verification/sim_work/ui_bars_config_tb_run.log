@@ -1,2 +1,0 @@
-PASS UI layering and bar frame config: 345990 output pixels, 85332 independent exact probes, 7856 return rectangle pixels across y64, 43664 hidden bar pixels including offline/manual text, 1200 AWB removed-button pixels, 2720 tint reset pixels crossing y548, all menu pages, first-pixel VS/sync latency and mid-frame no tearing
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\ui_bars_config_tb.sv:108: $finish called at 3713490000 (1ps)

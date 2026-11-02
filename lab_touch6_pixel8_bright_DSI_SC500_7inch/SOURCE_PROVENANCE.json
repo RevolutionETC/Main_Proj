@@ -1,6 +1,0 @@
-{
-  "baseline_archive": "C:\\Users\\Xuan\\.codex\\.chatgpt-projects\\g-p-6ac6609d5fac8191bbfcec16e35eed57\\outputs\\lab_touch5_negative_DSI_SC500_7inch.zip",
-  "baseline_sha256": "9e065c5b7cee202922199cb93b225b8a56968d81ac96123e29b44ad7a9719ee8",
-  "baseline_prefix": "lab_touch5_negative_DSI_SC500_7inch/",
-  "scope": "Append mode 5: 8x8 top-left sampling with RGB332 palette; lift color modes 0/2/5 after the existing AWB. Preserve original modes 1/3/4 algorithms and all timing constraints."
-}

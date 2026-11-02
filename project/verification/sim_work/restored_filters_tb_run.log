@@ -1,2 +1,0 @@
-PASS restored filter oracles: 216 frames/91800 pixels, all 64 cartoon colours, flat/low-gradient/noise/borders, threshold 78/80/82=2/11/9, 53784 midframe-request pixels
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\restored_filters_tb.sv:92: $finish called at 2138400000 (1ps)

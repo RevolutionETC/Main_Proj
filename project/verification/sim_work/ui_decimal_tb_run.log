@@ -1,2 +1,0 @@
-PASS all 74 live/manual gain readouts, shared RGB BCD, mode bits and display-frame atomicity
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\isp_ui_tb.sv:77: $finish called at 136200000 (1ps)

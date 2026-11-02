@@ -1,2 +1,0 @@
-PASS UI coordinate arithmetic: 848 independent integer-division/remainder comparisons across all 64 decoder values, 384 text pixels, 144 HUD pixels and all 256 grid coordinates
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\ui_coordinate_math_tb.sv:30: $finish called at 0 (1ps)

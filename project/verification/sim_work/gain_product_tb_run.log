@@ -1,2 +1,0 @@
-PASS exact gain arithmetic: 262144 enhancement + 262144 retro unsigned products, including gain bit 9
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\gain_product_tb.sv:12: $finish called at 262144000 (1ps)

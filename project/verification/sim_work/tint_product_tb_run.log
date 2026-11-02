@@ -1,2 +1,0 @@
-PASS exact residual tint pipeline: all 4864 pixel/offset combinations, all four lanes, rounding and clipping
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\isp_ui_tb.sv:97: $finish called at 145960000 (1ps)

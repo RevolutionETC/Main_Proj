@@ -1,2 +1,0 @@
-PASS actual two-lane CSI->RAW10->AXIS->demosaic->WB->frame FIFO->MC queue->DDR model->1024x600 output: 4 native frames, 3 complete AE measurements, B5/G6 pixel reference; 3 valid frame commits, 2571822 nonblack pixels; no FIFO fault or arbitration collision
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\camera_pipe_tb.sv:123: $finish called at 85311450000 (1ps)

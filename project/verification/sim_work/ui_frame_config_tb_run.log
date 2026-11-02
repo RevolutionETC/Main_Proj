@@ -1,2 +1,0 @@
-PASS one base-frame config snapshot through real detector/UI delays, near-VS mailbox updates, six page/tag/bar-hide combinations, exact RGB and pixel-aligned watermark enable
-C:\Users\Xuan\.codex\.chatgpt-projects\g-p-6ac6609d5fac8191bbfcec16e35eed57\qr27\verification\isp\ui_frame_config_tb.sv:49: $finish called at 35210000 (1ps)
